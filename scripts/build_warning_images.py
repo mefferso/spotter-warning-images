@@ -3,10 +3,8 @@
 import argparse
 import json
 import re
-import textwrap
 from datetime import datetime, timezone
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
@@ -17,15 +15,10 @@ from shapely.geometry import shape
 
 OUT_DIR = Path("docs/warning-images")
 WFO = "LIX"
-LOCAL_TZ = ZoneInfo("America/Chicago")
 
 DARK = "#202c33"
-DARK2 = "#26343b"
-PANEL_LINE = "#b94b50"
-PANEL_TITLE = "#e36a6f"
 LAND = "#f4f0dc"
 WATER = "#cde8f5"
-ROADLIKE = "#9a7b4f"
 
 WANTED_EVENTS = {
     "Tornado Warning": ("TO", "W"),
@@ -162,24 +155,6 @@ def parse_time(value):
         return datetime.fromtimestamp(0, tz=timezone.utc)
 
 
-def fmt_time_local(value):
-    dt = parse_time(value)
-    if dt.year < 2000:
-        return "N/A"
-    local = dt.astimezone(LOCAL_TZ)
-    return local.strftime("%-I:%M %p %Z\n%A\n%b %-d, %Y")
-
-
-def first_param(props, key):
-    params = props.get("parameters") or {}
-    value = params.get(key) or params.get(key.lower()) or []
-    if isinstance(value, list) and value:
-        return str(value[0])
-    if isinstance(value, str):
-        return value
-    return ""
-
-
 def event_color(event):
     if event == "Tornado Warning":
         return "#cf575c"
@@ -190,18 +165,6 @@ def event_color(event):
     if event == "Special Marine Warning":
         return "#8a5bb8"
     return "#cf575c"
-
-
-def event_main_threat(event):
-    if event == "Tornado Warning":
-        return "TORNADO"
-    if event == "Severe Thunderstorm Warning":
-        return "SEVERE STORM"
-    if event == "Flash Flood Warning":
-        return "FLASH FLOOD"
-    if event == "Special Marine Warning":
-        return "MARINE WARNING"
-    return "WARNING"
 
 
 def safe_event_id(feature):
@@ -218,26 +181,18 @@ def safe_event_id(feature):
     return raw[-80:]
 
 
-def wrapped(text, width=34, max_lines=4):
-    if not text:
-        return "N/A"
-    lines = textwrap.wrap(str(text), width=width)
-    if len(lines) > max_lines:
-        lines = lines[:max_lines]
-        lines[-1] = lines[-1].rstrip(".,;:") + "..."
-    return "\n".join(lines)
-
-
 def map_extent_for_geom(geom):
     minx, miny, maxx, maxy = geom.bounds
-    dx = max(maxx - minx, 0.16)
-    dy = max(maxy - miny, 0.16)
-    pad_x = max(dx * 0.48, 0.09)
-    pad_y = max(dy * 0.48, 0.08)
+    dx = max(maxx - minx, 0.18)
+    dy = max(maxy - miny, 0.18)
+
+    # User requested zoomed out more than prior image.
+    pad_x = max(dx * 1.05, 0.24)
+    pad_y = max(dy * 1.05, 0.20)
     return [minx - pad_x, maxx + pad_x, miny - pad_y, maxy + pad_y]
 
 
-def add_base_map(ax, extent, detail_scale="10m", add_counties=True):
+def add_base_map(ax, extent, detail_scale="10m"):
     ax.set_extent(extent, crs=ccrs.PlateCarree())
     ax.set_facecolor(LAND)
     ax.add_feature(cfeature.LAND.with_scale(detail_scale), facecolor=LAND, zorder=0)
@@ -245,23 +200,21 @@ def add_base_map(ax, extent, detail_scale="10m", add_counties=True):
     ax.add_feature(cfeature.LAKES.with_scale(detail_scale), facecolor=WATER, edgecolor="#9ab6c5", linewidth=0.35, zorder=1)
     ax.add_feature(cfeature.RIVERS.with_scale(detail_scale), edgecolor="#aec8d2", linewidth=0.45, zorder=2)
     ax.add_feature(cfeature.COASTLINE.with_scale(detail_scale), edgecolor="#555555", linewidth=0.65, zorder=3)
-    ax.add_feature(cfeature.STATES.with_scale(detail_scale), edgecolor="#555555", linewidth=0.85, zorder=4)
-
-    if add_counties:
-        try:
-            counties = cfeature.NaturalEarthFeature(
-                "cultural", "admin_2_counties", detail_scale,
-                facecolor="none", edgecolor="#8e8e8e"
-            )
-            ax.add_feature(counties, linewidth=0.35, alpha=0.8, zorder=4)
-        except Exception:
-            pass
+    ax.add_feature(cfeature.STATES.with_scale(detail_scale), edgecolor="#555555", linewidth=0.9, zorder=4)
+    try:
+        counties = cfeature.NaturalEarthFeature(
+            "cultural", "admin_2_counties", detail_scale,
+            facecolor="none", edgecolor="#8e8e8e"
+        )
+        ax.add_feature(counties, linewidth=0.35, alpha=0.75, zorder=4)
+    except Exception:
+        pass
 
     ax.set_xticks([])
     ax.set_yticks([])
     for spine in ax.spines.values():
         spine.set_edgecolor(DARK)
-        spine.set_linewidth(1.2)
+        spine.set_linewidth(1.4)
 
 
 def add_warning_polygon(ax, geom, color):
@@ -272,7 +225,7 @@ def add_warning_polygon(ax, geom, color):
             crs=ccrs.PlateCarree(),
             facecolor=color,
             edgecolor="#7a1d22",
-            linewidth=2.0,
+            linewidth=2.1,
             alpha=0.82,
             zorder=10,
         )
@@ -287,84 +240,17 @@ def add_city_labels(ax, extent, geom):
             dist = ((lon - centroid.x) ** 2 + (lat - centroid.y) ** 2) ** 0.5
             ranked.append((dist, name, lat, lon))
 
-    for _, name, lat, lon in sorted(ranked)[:8]:
+    for _, name, lat, lon in sorted(ranked)[:12]:
         ax.text(
             lon, lat, name,
             transform=ccrs.PlateCarree(),
-            fontsize=9.2,
+            fontsize=10,
             fontweight="bold",
             color="#222222",
             ha="center", va="center",
             zorder=20,
-            path_effects=[pe.withStroke(linewidth=2.3, foreground="white")],
+            path_effects=[pe.withStroke(linewidth=2.5, foreground="white")],
         )
-
-
-def build_detail_lines(props, event):
-    tornado_detection = first_param(props, "tornadoDetection")
-    tornado_damage = first_param(props, "tornadoDamageThreat")
-    storm_damage = first_param(props, "thunderstormDamageThreat")
-    flash_flood_damage = first_param(props, "flashFloodDamageThreat")
-    hail = first_param(props, "maxHailSize")
-    wind = first_param(props, "maxWindGust")
-
-    if event == "Tornado Warning":
-        lines = [("TORNADO", tornado_detection or tornado_damage or "Radar Indicated")]
-        if hail:
-            lines.append(("HAIL", f"{hail} in possible"))
-        return lines
-    if event == "Severe Thunderstorm Warning":
-        lines = [("WIND", f"{wind} mph possible" if wind else storm_damage or "Damaging wind possible")]
-        if hail:
-            lines.append(("HAIL", f"{hail} in possible"))
-        return lines
-    if event == "Flash Flood Warning":
-        return [("FLASH FLOOD", flash_flood_damage or "Life-threatening flooding possible")]
-    if event == "Special Marine Warning":
-        return [("MARINE", wind or "Hazardous marine conditions")]
-    return [(event_main_threat(event), "See official warning text")]
-
-
-def draw_section_title(ax, y, text):
-    ax.text(0.075, y, text, color=PANEL_TITLE, fontsize=11.5, fontweight="bold", ha="left", va="center")
-    ax.plot([0.075, 0.925], [y - 0.025, y - 0.025], color=PANEL_LINE, lw=1.2)
-
-
-def draw_sidebar(ax, props, event):
-    ax.set_facecolor(DARK)
-    ax.set_xlim(0, 1)
-    ax.set_ylim(0, 1)
-    ax.set_xticks([])
-    ax.set_yticks([])
-    for spine in ax.spines.values():
-        spine.set_visible(False)
-
-    ax.text(
-        0.5, 0.955,
-        f"Valid Until\n{fmt_time_local(props.get('expires', ''))}",
-        ha="center", va="top",
-        fontsize=10.2,
-        color="#dce7ec",
-        linespacing=1.08,
-    )
-
-    draw_section_title(ax, 0.785, "Threat Information")
-    y = 0.705
-    for label, value in build_detail_lines(props, event):
-        ax.scatter([0.095], [y], s=118, facecolors="white", edgecolors="#dce7ec", linewidths=1.0, zorder=3)
-        ax.text(0.16, y + 0.018, label, ha="left", va="center", fontsize=11.8, color="white", fontweight="bold")
-        ax.text(0.16, y - 0.033, wrapped(value, width=24, max_lines=2), ha="left", va="center", fontsize=9.1, color="#dce7ec")
-        y -= 0.125
-
-    draw_section_title(ax, 0.435, "Potential Exposure")
-    pop = first_param(props, "population") or "N/A"
-    schools = first_param(props, "schools") or "N/A"
-    hospitals = first_param(props, "hospitals") or "N/A"
-    ax.scatter([0.095], [0.345], s=205, facecolors="none", edgecolors="white", linewidths=2)
-    ax.text(0.095, 0.345, "i", ha="center", va="center", fontsize=14, color="white", fontweight="bold")
-    ax.text(0.16, 0.372, f"Population: {pop}", ha="left", fontsize=9.4, color="#dce7ec")
-    ax.text(0.16, 0.332, f"Schools: {schools}", ha="left", fontsize=9.4, color="#dce7ec")
-    ax.text(0.16, 0.292, f"Hospitals: {hospitals}", ha="left", fontsize=9.4, color="#dce7ec")
 
 
 def draw_warning_image(feature, output_path):
@@ -378,52 +264,39 @@ def draw_warning_image(feature, output_path):
     color = event_color(event)
     extent = map_extent_for_geom(geom)
 
-    # 4:3 card. Keep the full canvas filled; no bbox auto-crop weirdness.
+    # Simple card: warning header + full map only.
     fig = plt.figure(figsize=(10.0, 7.5), dpi=160)
     fig.patch.set_facecolor(DARK)
 
-    ax_header = fig.add_axes([0.024, 0.875, 0.952, 0.105])
-    ax_side = fig.add_axes([0.024, 0.060, 0.285, 0.815])
-    ax_map = fig.add_axes([0.309, 0.060, 0.667, 0.815], projection=ccrs.PlateCarree())
-    ax_inset = fig.add_axes([0.040, 0.078, 0.230, 0.135], projection=ccrs.PlateCarree())
+    ax_header = fig.add_axes([0.025, 0.865, 0.950, 0.110])
+    ax_map = fig.add_axes([0.025, 0.035, 0.950, 0.830], projection=ccrs.PlateCarree())
 
     ax_header.set_facecolor(color)
-    # Use spaced title to better echo the official NWS social card.
-    title = " ".join(list(event)) if len(event) < 25 else event
     ax_header.text(
-        0.5, 0.51, title,
+        0.5, 0.50, event,
         ha="center", va="center",
-        fontsize=25 if len(title) < 35 else 22,
+        fontsize=30,
         color="white",
         fontweight="bold",
         family="DejaVu Sans",
-        alpha=0.98,
     )
     ax_header.set_xticks([])
     ax_header.set_yticks([])
     for s in ax_header.spines.values():
         s.set_visible(False)
 
-    draw_sidebar(ax_side, props, event)
-
-    add_base_map(ax_map, extent, detail_scale="10m", add_counties=True)
+    add_base_map(ax_map, extent, detail_scale="10m")
     add_warning_polygon(ax_map, geom, color)
     add_city_labels(ax_map, extent, geom)
     ax_map.text(
-        0.986, 0.018, "NWS New Orleans/Baton Rouge",
+        0.988, 0.018, "NWS New Orleans/Baton Rouge",
         transform=ax_map.transAxes,
         ha="right", va="bottom",
-        fontsize=7.4,
+        fontsize=8.5,
         color="#24415a",
         bbox=dict(facecolor="white", alpha=0.72, edgecolor="none", pad=2),
         zorder=50,
     )
-
-    inset_extent = [-92.7, -88.2, 28.5, 31.8]
-    add_base_map(ax_inset, inset_extent, detail_scale="50m", add_counties=False)
-    add_warning_polygon(ax_inset, geom, color)
-    ax_inset.text(-91.9, 30.15, "LA", transform=ccrs.PlateCarree(), fontsize=7, color="#333")
-    ax_inset.text(-89.9, 30.65, "MS", transform=ccrs.PlateCarree(), fontsize=7, color="#333")
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_path, facecolor=fig.get_facecolor(), bbox_inches=None, pad_inches=0)
