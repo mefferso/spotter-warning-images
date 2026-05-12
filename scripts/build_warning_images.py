@@ -452,6 +452,8 @@ def main():
     if not features:
         print("No KLIX matching warnings found.")
 
+    records = []
+
     for feature in features:
         props = feature.get("properties") or {}
         img_id = safe_event_id(feature)
