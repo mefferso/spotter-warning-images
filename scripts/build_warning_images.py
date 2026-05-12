@@ -50,8 +50,32 @@ def is_klix_alert(feature):
     if event not in WANTED_EVENTS:
         return False
 
+    # Best case: api.weather.gov gives WFO in parameters.
     wfos = get_wfo_list(props)
-    return WFO in wfos
+    if WFO in wfos:
+        return True
+
+    # Backup: many alert IDs/headlines/descriptions include KLIX or NWS New Orleans.
+    haystack = " ".join([
+        str(feature.get("id") or ""),
+        str(props.get("id") or ""),
+        str(props.get("senderName") or ""),
+        str(props.get("headline") or ""),
+        str(props.get("description") or ""),
+        str(props.get("instruction") or ""),
+        str(props.get("areaDesc") or ""),
+    ]).upper()
+
+    if "KLIX" in haystack:
+        return True
+
+    if "NWS NEW ORLEANS" in haystack:
+        return True
+
+    if "NEW ORLEANS/BATON ROUGE" in haystack:
+        return True
+
+    return False
 
 
 def fetch_active_klix_warnings():
