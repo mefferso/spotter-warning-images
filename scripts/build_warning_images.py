@@ -205,9 +205,20 @@ def add_base_map(ax, extent, detail_scale="10m"):
     try:
         counties = cfeature.NaturalEarthFeature(
             "cultural", "admin_2_counties", detail_scale,
-            facecolor="none", edgecolor="#8e8e8e"
+            facecolor="none", edgecolor="#555555" # Changed to a slightly brighter dark gray
         )
-        ax.add_feature(counties, linewidth=0.35, alpha=0.75, zorder=4)
+        # Removed the alpha transparency and thickened the line slightly
+        ax.add_feature(counties, linewidth=0.6, zorder=4) 
+    except Exception:
+        pass
+
+    # Add major roads/highways
+    try:
+        roads = cfeature.NaturalEarthFeature(
+            "cultural", "roads", detail_scale,
+            facecolor="none", edgecolor="#2a2a2a" # Very subtle dark line for roads
+        )
+        ax.add_feature(roads, linewidth=0.8, zorder=3)
     except Exception:
         pass
 
