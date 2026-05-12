@@ -449,7 +449,8 @@ def main():
             features = fetch_latest_klix_warning()
             mode_used = "latest_fallback"
 
-    records = []
+    if not features:
+        print("No KLIX matching warnings found.")
 
     for feature in features:
         props = feature.get("properties") or {}
