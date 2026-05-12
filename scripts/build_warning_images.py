@@ -16,9 +16,10 @@ from shapely.geometry import shape
 OUT_DIR = Path("docs/warning-images")
 WFO = "LIX"
 
-DARK = "#202c33"
-LAND = "#f4f0dc"
-WATER = "#cde8f5"
+DARK = "#121212"       # Deeper background
+LAND = "#242424"       # Dark gray land
+WATER = "#1a1a1a"      # Even darker water
+COUNTY_LINES = "#333333" # Subtle dark borders
 
 WANTED_EVENTS = {
     "Tornado Warning": ("TO", "W"),
@@ -224,10 +225,10 @@ def add_warning_polygon(ax, geom, color):
             [g],
             crs=ccrs.PlateCarree(),
             facecolor=color,
-            edgecolor="#7a1d22",
-            linewidth=2.1,
-            alpha=0.82,
-            zorder=10,
+            edgecolor=color,       # Match border to the event color
+            linewidth=3.5,         # Thicker, bolder edge
+            alpha=0.35,            # Lower opacity to see the map
+            zorder=10,             # [cite: 16]
         )
 
 
@@ -241,15 +242,19 @@ def add_city_labels(ax, extent, geom):
             ranked.append((dist, name, lat, lon))
 
     for _, name, lat, lon in sorted(ranked)[:12]:
+        # Add a subtle dot for the city location
+        ax.plot(lon, lat, marker='o', color='white', markersize=3, transform=ccrs.PlateCarree(), zorder=19)
+        
+        # Draw the text slightly offset from the dot
         ax.text(
-            lon, lat, name,
+            lon, lat - 0.02, name,
             transform=ccrs.PlateCarree(),
-            fontsize=10,
+            fontsize=9,
             fontweight="bold",
-            color="#222222",
-            ha="center", va="center",
-            zorder=20,
-            path_effects=[pe.withStroke(linewidth=2.5, foreground="white")],
+            color="#ffffff",  # White text for dark mode
+            ha="center", va="top",
+            zorder=20,        # 
+            path_effects=[pe.withStroke(linewidth=1.5, foreground="#000000")], # Thin black stroke
         )
 
 
