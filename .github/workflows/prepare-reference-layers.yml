@@ -6,7 +6,7 @@ on:
       states:
         description: "States to build, space-separated"
         required: true
-        default: "LA MS AL"
+        default: "LA MS"
       skip_population:
         description: "Skip population blocks"
         required: true
