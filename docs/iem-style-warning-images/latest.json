@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-22T15:47:46.001129+00:00",
+  "mode": "latest",
+  "wfo": "LIX",
+  "count": 1,
+  "warnings": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.385e9af3d45110c25647a92a17387bdd2d72fb85.001.1",
+      "event": "Tornado Warning",
+      "headline": "Tornado Warning issued May 21 at 7:01PM CDT until May 21 at 7:45PM CDT by NWS New Orleans LA",
+      "sent": "2026-05-21T19:01:00-05:00",
+      "effective": "2026-05-21T19:01:00-05:00",
+      "expires": "2026-05-21T19:45:00-05:00",
+      "areaDesc": "Amite, MS",
+      "filename": "KLIX-TO-W-0053.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/KLIX-TO-W-0053.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
+    }
+  ]
+}
