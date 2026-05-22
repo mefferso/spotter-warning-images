@@ -1,16 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare cached GIS layers for IEM-style warning images.
-
-Outputs Parquet files under data/reference/:
-  - population_blocks.parquet
-  - schools.parquet
-  - hospitals.parquet
-  - places.parquet
-  - roads.parquet
-
-The operational 5-minute warning-image workflow should read these cached files,
-not download reference data every run.
-"""
+"""Prepare cached GIS layers for IEM-style warning images."""
 
 from __future__ import annotations
 
@@ -25,11 +14,9 @@ from typing import Iterable
 import geopandas as gpd
 import pandas as pd
 import requests
-from shapely.geometry import Point, box
+from shapely.geometry import box
 
 REFERENCE_DIR = Path("data/reference")
-AREA_CRS = "EPSG:5070"
-
 STATE_FIPS = {"LA": "22", "MS": "28", "AL": "01"}
 STATE_BBOX = {
     "LA": (-94.1, 28.6, -88.7, 33.1),
@@ -37,8 +24,6 @@ STATE_BBOX = {
     "AL": (-88.6, 30.1, -84.8, 35.1),
 }
 
-# HIFLD ArcGIS services. Kept as URLs here so the warning workflow does not
-# need to know anything about external services.
 HIFLD_SERVICES = {
     "hospitals": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Hospitals/FeatureServer/0/query",
     "public_schools": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0/query",
@@ -47,7 +32,7 @@ HIFLD_SERVICES = {
 
 
 def _download(url: str) -> bytes:
-    r = requests.get(url, timeout=120, headers={"User-Agent": "spotter-warning-images reference builder"})
+    r = requests.get(url, timeout=180, headers={"User-Agent": "spotter-warning-images reference builder"})
     r.raise_for_status()
     return r.content
 
@@ -78,35 +63,31 @@ def _save(gdf: gpd.GeoDataFrame, path: Path) -> None:
     print(f"wrote {len(gdf):,} features -> {path}")
 
 
-def census_counties(state_fips: str) -> list[str]:
-    url = "https://api.census.gov/data/2020/dec/pl"
-    params = {"get": "NAME", "for": "county:*", "in": f"state:{state_fips}"}
-    data = requests.get(url, params=params, timeout=60).json()
-    header, rows = data[0], data[1:]
-    idx = header.index("county")
-    return [row[idx] for row in rows]
+def _normalize_block_geoids(blocks: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
+    if "GEOID20" in blocks.columns:
+        return blocks
+    if "GEOID" in blocks.columns:
+        return blocks.rename(columns={"GEOID": "GEOID20"})
+    pieces = ["STATEFP20", "COUNTYFP20", "TRACTCE20", "BLOCKCE20"]
+    if all(col in blocks.columns for col in pieces):
+        blocks = blocks.copy()
+        blocks["GEOID20"] = (
+            blocks["STATEFP20"].astype(str).str.zfill(2)
+            + blocks["COUNTYFP20"].astype(str).str.zfill(3)
+            + blocks["TRACTCE20"].astype(str).str.zfill(6)
+            + blocks["BLOCKCE20"].astype(str).str.zfill(4)
+        )
+        return blocks
+    raise ValueError("Could not find or build GEOID20 for Census blocks")
 
 
-def census_block_population(state_fips: str) -> pd.DataFrame:
-    url = "https://api.census.gov/data/2020/dec/pl"
-    frames = []
-    for county in census_counties(state_fips):
-        params = {
-            "get": "P1_001N",
-            "for": "block:*",
-            "in": f"state:{state_fips} county:{county}",
-        }
-        r = requests.get(url, params=params, timeout=120)
-        r.raise_for_status()
-        data = r.json()
-        if len(data) <= 1:
-            continue
-        header, rows = data[0], data[1:]
-        df = pd.DataFrame(rows, columns=header)
-        df["GEOID20"] = df["state"] + df["county"] + df["tract"] + df["block"]
-        df["population"] = pd.to_numeric(df["P1_001N"], errors="coerce").fillna(0).astype(int)
-        frames.append(df[["GEOID20", "population"]])
-    return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=["GEOID20", "population"])
+def _block_population_series(blocks: gpd.GeoDataFrame) -> pd.Series:
+    for col in ["POP20", "POP100", "P0010001", "POPULATION", "POP"]:
+        if col in blocks.columns:
+            print(f"using block population field: {col}")
+            return pd.to_numeric(blocks[col], errors="coerce").fillna(0).astype(int)
+    print("WARNING: no population field found in block shapefile; using zeros")
+    return pd.Series([0] * len(blocks), index=blocks.index, dtype="int64")
 
 
 def prepare_population(states: list[str]) -> None:
@@ -116,15 +97,10 @@ def prepare_population(states: list[str]) -> None:
         print(f"population blocks: {state}")
         blocks_url = f"https://www2.census.gov/geo/tiger/TIGER2020/TABBLOCK20/tl_2020_{fips}_tabblock20.zip"
         blocks = _read_zipped_shapefile(blocks_url).to_crs("EPSG:4326")
-        pop = census_block_population(fips)
-        if "GEOID20" not in blocks.columns and "GEOID" in blocks.columns:
-            blocks = blocks.rename(columns={"GEOID": "GEOID20"})
-        joined = blocks.merge(pop, on="GEOID20", how="left")
-        joined["population"] = joined["population"].fillna(0).astype(int)
-        keep = joined[["GEOID20", "population", "geometry"]].copy()
-        out.append(keep)
-    gdf = pd.concat(out, ignore_index=True)
-    gdf = gpd.GeoDataFrame(gdf, geometry="geometry", crs="EPSG:4326")
+        blocks = _normalize_block_geoids(blocks)
+        blocks["population"] = _block_population_series(blocks)
+        out.append(blocks[["GEOID20", "population", "geometry"]].copy())
+    gdf = gpd.GeoDataFrame(pd.concat(out, ignore_index=True), geometry="geometry", crs="EPSG:4326")
     _save(gdf, REFERENCE_DIR / "population_blocks.parquet")
 
 
@@ -153,7 +129,7 @@ def _arcgis_geojson_query(url: str, states: list[str]) -> gpd.GeoDataFrame:
         offset += 2000
     if not frames:
         return gpd.GeoDataFrame(columns=["geometry"], geometry="geometry", crs="EPSG:4326")
-    return pd.concat(frames, ignore_index=True).pipe(gpd.GeoDataFrame, geometry="geometry", crs="EPSG:4326")
+    return gpd.GeoDataFrame(pd.concat(frames, ignore_index=True), geometry="geometry", crs="EPSG:4326")
 
 
 def prepare_schools(states: list[str]) -> None:
@@ -165,8 +141,7 @@ def prepare_schools(states: list[str]) -> None:
             gdf["source_layer"] = key
             frames.append(gdf)
     if frames:
-        schools = pd.concat(frames, ignore_index=True)
-        schools = gpd.GeoDataFrame(schools, geometry="geometry", crs="EPSG:4326")
+        schools = gpd.GeoDataFrame(pd.concat(frames, ignore_index=True), geometry="geometry", crs="EPSG:4326")
     else:
         schools = gpd.GeoDataFrame(columns=["geometry"], geometry="geometry", crs="EPSG:4326")
     cols = [c for c in ["NAME", "SCHOOL_NAME", "source_layer", "geometry"] if c in schools.columns]
@@ -195,11 +170,9 @@ def prepare_places(states: list[str]) -> None:
             places["name"] = places["NAMELSAD"]
         else:
             places["name"] = ""
-        if "ALAND" in places.columns:
-            places["population"] = 0
+        places["population"] = 0
         frames.append(places[["name", "state", "population", "geometry"]])
-    gdf = pd.concat(frames, ignore_index=True)
-    gdf = gpd.GeoDataFrame(gdf, geometry="geometry", crs="EPSG:4326")
+    gdf = gpd.GeoDataFrame(pd.concat(frames, ignore_index=True), geometry="geometry", crs="EPSG:4326")
     _save(gdf, REFERENCE_DIR / "places.parquet")
 
 
@@ -222,8 +195,7 @@ def prepare_roads(states: list[str]) -> None:
         except Exception as exc:
             print(f"roads failed for {state}: {exc}")
     if frames:
-        roads = pd.concat(frames, ignore_index=True)
-        roads = gpd.GeoDataFrame(roads, geometry="geometry", crs="EPSG:4326")
+        roads = gpd.GeoDataFrame(pd.concat(frames, ignore_index=True), geometry="geometry", crs="EPSG:4326")
     else:
         roads = gpd.GeoDataFrame(columns=["geometry"], geometry="geometry", crs="EPSG:4326")
     cols = [c for c in ["FULLNAME", "RTTYP", "MTFCC", "geometry"] if c in roads.columns]
