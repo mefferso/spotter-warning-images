@@ -3,3 +3,8 @@ matplotlib
 cartopy
 shapely
 numpy
+pandas
+geopandas
+pyogrio
+pyarrow
+rtree
