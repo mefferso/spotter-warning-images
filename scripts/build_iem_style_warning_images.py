@@ -12,7 +12,8 @@ import cartopy.feature as cfeature
 import matplotlib.pyplot as plt
 import matplotlib.patheffects as pe
 import requests
-from matplotlib.patches import Circle, Polygon as MplPolygon, Rectangle
+from matplotlib.path import Path as MplPath
+from matplotlib.patches import Circle, Ellipse, PathPatch, Polygon as MplPolygon, Rectangle
 from shapely.geometry import Point, shape
 
 OUT_DIR = Path("docs/iem-style-warning-images")
@@ -101,29 +102,34 @@ def threat_items(props):
     if event=="Tornado Warning":
         tor="Radar Indicated"
         if "OBSERVED" in combined or "CONFIRMED" in combined: tor="Observed"
-        hail=""
         m=re.search(r"MAX HAIL SIZE\.\.\.([0-9.]+) IN",combined)
-        if m: hail=f"{m.group(1)} inch possible"
-        elif "HAIL" in combined: hail="Pea\nSized Possible"
-        else: hail="Pea\nSized Possible"
+        hail=f"{m.group(1)} inch possible" if m else "Pea\nSized Possible"
         return [("tornado","TORNADO",tor),("hail","HAIL",hail)]
     if event=="Flash Flood Warning": return [("flood","FLASH FLOOD","Radar/Gauge Indicated"),("flood","IMPACTS","Flooding of roads and low-lying areas")]
     if event=="Severe Thunderstorm Warning": return [("wind","WIND","60 mph gusts possible"),("hail","HAIL","Up to quarter size possible")]
     return [("info",event.upper().replace(" WARNING",""),"See warning text for details")]
 def draw_info(ax,x,y,s=.78): ax.add_patch(Circle((x+.026*s,y+.026*s),.026*s,fc="none",ec=TEXT_WHITE,lw=2.1)); ax.text(x+.026*s,y+.020*s,"i",ha="center",va="center",color=TEXT_WHITE,fontsize=22*s,fontweight="bold")
 def draw_tornado(ax,x,y,s=1):
-    pts=[(x+.00*s,y+.055*s),(x+.085*s,y+.055*s),(x+.064*s,y+.044*s),(x+.044*s,y+.034*s),(x+.030*s,y+.022*s),(x+.021*s,y+.010*s),(x+.012*s,y+.000*s)]
-    ax.add_patch(MplPolygon(pts,closed=False,fill=False,edgecolor=TEXT_WHITE,linewidth=3.0,joinstyle="round",capstyle="round"))
+    ax.add_patch(Ellipse((x+.049*s,y+.058*s),.103*s,.030*s,fc="none",ec=TEXT_WHITE,lw=2.9,zorder=5))
+    verts=[(x+.090*s,y+.046*s),(x+.070*s,y+.041*s),(x+.057*s,y+.035*s),(x+.046*s,y+.028*s),(x+.038*s,y+.020*s),(x+.030*s,y+.011*s),(x+.018*s,y+.000*s),(x+.035*s,y+.006*s),(x+.045*s,y+.018*s),(x+.052*s,y+.029*s),(x+.064*s,y+.038*s),(x+.091*s,y+.045*s),(x+.090*s,y+.046*s)]
+    codes=[MplPath.MOVETO]+[MplPath.CURVE3]*(len(verts)-2)+[MplPath.CLOSEPOLY]
+    ax.add_patch(PathPatch(MplPath(verts,codes),fc=TEXT_WHITE,ec=TEXT_WHITE,lw=.8,zorder=4))
+    ax.plot([x+.018*s,x+.066*s],[y+.045*s,y+.045*s],color=TEXT_WHITE,lw=2.0,solid_capstyle="round",zorder=6)
+    ax.plot([x+.035*s,x+.065*s],[y+.031*s,y+.035*s],color=SIDEBAR_BG,lw=1.6,alpha=.95,solid_capstyle="round",zorder=7)
 def draw_hail(ax,x,y,s=1):
-    ax.add_patch(Circle((x+.025*s,y+.038*s),.017*s,fc=TEXT_WHITE,ec="none")); ax.plot([x+.07*s,x+.035*s],[y+.07*s,y+.017*s],color=TEXT_WHITE,lw=1.0); ax.plot([x+.035*s,x+.050*s],[y+.017*s,y-.005*s],color=TEXT_WHITE,lw=1.0)
+    ax.plot([x+.002*s,x+.062*s,x+.080*s,x+.092*s],[y+.034*s,y+.034*s,y+.022*s,y+.022*s],color=TEXT_WHITE,lw=2.4,solid_capstyle="round")
+    ax.plot([x+.006*s,x+.025*s,x+.052*s,x+.067*s],[y+.056*s,y+.056*s,y+.034*s,y+.034*s],color=TEXT_WHITE,lw=2.4,solid_capstyle="round")
+    ax.add_patch(Circle((x+.036*s,y+.021*s),.012*s,fc="none",ec=TEXT_WHITE,lw=2.1)); ax.add_patch(Circle((x+.075*s,y+.020*s),.010*s,fc="none",ec=TEXT_WHITE,lw=2.0))
+    for hx,hy in [(x+.070*s,y+.065*s),(x+.098*s,y+.052*s),(x+.112*s,y+.033*s)]: ax.add_patch(Circle((hx,hy),.0075*s,fc=TEXT_WHITE,ec="none"))
+    ax.plot([x+.085*s,x+.103*s],[y+.075*s,y+.091*s],color=TEXT_WHITE,lw=2.0,solid_capstyle="round"); ax.plot([x+.112*s,x+.128*s],[y+.060*s,y+.076*s],color=TEXT_WHITE,lw=2.0,solid_capstyle="round")
 def draw_sidebar(ax, props, geom, color):
     ax.set_xlim(0,1); ax.set_ylim(0,1); ax.axis("off"); ax.add_patch(Rectangle((0,0),1,1,fc=SIDEBAR_BG,ec="none"))
     ax.text(.50,.94,"Valid Until",ha="center",va="center",color=TEXT_WHITE,fontsize=9); ax.text(.50,.885,fmt_valid_until(parse_time(props.get("expires") or props.get("ends"))),ha="center",va="center",color=TEXT_WHITE,fontsize=10.5,linespacing=1.25)
     ax.text(.045,.785,"Threat Information",ha="left",va="center",color=color,fontsize=10.8,fontweight="bold"); ax.plot([.045,.97],[.765,.765],color=color,lw=1)
     y=.695
     for icon,title,detail in threat_items(props):
-        if icon=="tornado": draw_tornado(ax,.075,y-.035,.95)
-        elif icon=="hail": draw_hail(ax,.085,y-.040,.95)
+        if icon=="tornado": draw_tornado(ax,.055,y-.037,1.02)
+        elif icon=="hail": draw_hail(ax,.055,y-.045,.95)
         else: draw_info(ax,.090,y-.035,.8)
         ax.text(.315,y+.020,title,ha="left",va="center",color=TEXT_WHITE,fontsize=9.3,fontweight="bold"); ax.text(.315,y-.030,detail,ha="left",va="center",color=TEXT_WHITE,fontsize=9.0,linespacing=1.12); y-=.125
     ax.text(.045,.465,"Potential Exposure",ha="left",va="center",color=color,fontsize=10.8,fontweight="bold"); ax.plot([.045,.97],[.448,.448],color=color,lw=1); draw_info(ax,.115,.335,.82)
@@ -141,11 +147,11 @@ def draw_iem_style_image(feature, output_path):
     if not geom_json: return False
     geom=shape(geom_json); event=props.get("event","Warning"); color=event_color(event)
     fig=plt.figure(figsize=(CANVAS_W/DPI,CANVAS_H/DPI),dpi=DPI); fig.patch.set_facecolor(SIDEBAR_BG)
-    h=fig.add_axes([.015,.895,.970,.105]); h.set_facecolor(color); h.set_xticks([]); h.set_yticks([])
+    h=fig.add_axes([.015,.875,.970,.105]); h.set_facecolor(color); h.set_xticks([]); h.set_yticks([])
     for s in h.spines.values(): s.set_visible(False)
     h.text(.5,.50,event,ha="center",va="center",color=TEXT_WHITE,fontsize=30,fontweight="normal")
-    side=fig.add_axes([.015,.000,.320,.875]); draw_sidebar(side,props,geom,color)
-    main=fig.add_axes([.345,.000,.640,.875],projection=ccrs.PlateCarree()); draw_main_map(main,geom,color)
+    side=fig.add_axes([.015,.000,.320,.855]); draw_sidebar(side,props,geom,color)
+    main=fig.add_axes([.345,.000,.640,.855],projection=ccrs.PlateCarree()); draw_main_map(main,geom,color)
     inset=fig.add_axes([.015,.020,.320,.255],projection=ccrs.PlateCarree()); draw_overview(inset,geom,color)
     fig.text(.965,.008,"@NWSNewOrleans",ha="right",va="bottom",fontsize=7.5,color="#333333")
     output_path.parent.mkdir(parents=True,exist_ok=True); fig.savefig(output_path,dpi=DPI,facecolor=fig.get_facecolor(),bbox_inches=None,pad_inches=0); plt.close(fig); return True
