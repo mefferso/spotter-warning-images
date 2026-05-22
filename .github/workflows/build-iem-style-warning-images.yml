@@ -1,0 +1,58 @@
+name: Build IEM Style Warning Images
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "active or latest"
+        required: true
+        default: "active"
+        type: choice
+        options:
+          - active
+          - latest
+
+permissions:
+  contents: write
+
+concurrency:
+  group: iem-style-warning-images
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgeos-dev proj-bin libproj-dev
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build IEM style warning images
+        run: |
+          MODE="${{ github.event.inputs.mode || 'active' }}"
+          python scripts/build_iem_style_warning_images.py --mode "$MODE"
+
+      - name: Commit generated images
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/iem-style-warning-images
+          git commit -m "Update IEM style warning images" || echo "No changes to commit"
+          git push
