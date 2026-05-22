@@ -9,6 +9,7 @@ from pathlib import Path
 import geopandas as gpd
 import matplotlib.patheffects as pe
 from cartopy import crs as ccrs
+from shapely.geometry import box
 from shapely.geometry.base import BaseGeometry
 
 REFERENCE_DIR = Path("data/reference")
@@ -38,8 +39,8 @@ def add_cached_roads(ax, extent, road_color="#c89433") -> bool:
         return False
     try:
         minx, maxx, miny, maxy = extent
-        bbox = gpd.GeoSeries.from_bbox((minx, miny, maxx, maxy)).set_crs("EPSG:4326").iloc[0]
-        candidates = roads[roads.sindex.query(bbox, predicate="intersects")]
+        bbox = box(minx, miny, maxx, maxy)
+        candidates = roads.iloc[roads.sindex.query(bbox, predicate="intersects")]
         if candidates.empty:
             return False
         for geom in candidates.geometry:
@@ -48,7 +49,15 @@ def add_cached_roads(ax, extent, road_color="#c89433") -> bool:
             geoms = list(geom.geoms) if hasattr(geom, "geoms") else [geom]
             for line in geoms:
                 x, y = line.xy
-                ax.plot(x, y, transform=ccrs.PlateCarree(), color=road_color, linewidth=0.45, alpha=0.75, zorder=3)
+                ax.plot(
+                    x,
+                    y,
+                    transform=ccrs.PlateCarree(),
+                    color=road_color,
+                    linewidth=0.45,
+                    alpha=0.75,
+                    zorder=3,
+                )
         return True
     except Exception:
         return False
@@ -60,15 +69,17 @@ def get_place_labels(extent, warning_geom: BaseGeometry, max_count=11):
         return []
     try:
         minx, maxx, miny, maxy = extent
-        bbox = gpd.GeoSeries.from_bbox((minx, miny, maxx, maxy)).set_crs("EPSG:4326").iloc[0]
-        candidates = places[places.sindex.query(bbox, predicate="intersects")].copy()
+        bbox = box(minx, miny, maxx, maxy)
+        candidates = places.iloc[places.sindex.query(bbox, predicate="intersects")].copy()
         if candidates.empty:
             return []
         centroid = warning_geom.centroid
         candidates["_dist"] = candidates.geometry.distance(centroid)
         if "population" not in candidates.columns:
             candidates["population"] = 0
-        candidates["_score"] = candidates["_dist"] - (candidates["population"].fillna(0).astype(float) / 10000000.0)
+        candidates["_score"] = candidates["_dist"] - (
+            candidates["population"].fillna(0).astype(float) / 10000000.0
+        )
         candidates = candidates.sort_values("_score").head(max_count)
         labels = []
         for _, row in candidates.iterrows():
@@ -84,7 +95,15 @@ def get_place_labels(extent, warning_geom: BaseGeometry, max_count=11):
 
 def add_place_labels(ax, labels, land_color="#f4f0df"):
     for name, lat, lon in labels:
-        ax.plot(lon, lat, marker=".", color="#222222", markersize=2.5, transform=ccrs.PlateCarree(), zorder=31)
+        ax.plot(
+            lon,
+            lat,
+            marker=".",
+            color="#222222",
+            markersize=2.5,
+            transform=ccrs.PlateCarree(),
+            zorder=31,
+        )
         ax.text(
             lon,
             lat + 0.025,
