@@ -47,7 +47,7 @@ jobs:
       - name: Build IEM style warning images
         run: |
           MODE="${{ github.event.inputs.mode || 'active' }}"
-          python scripts/build_iem_style_warning_images.py --mode "$MODE"
+          python scripts/build_iem_style_warning_images_reference.py --mode "$MODE"
 
       - name: Commit generated images
         run: |
