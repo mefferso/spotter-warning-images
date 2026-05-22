@@ -151,7 +151,7 @@ def map_extent_for_geom(geom):
     return [minx - dx * 0.50, maxx + dx * 0.42, miny - dy * 0.50, maxy + dy * 0.42]
 
 
-def add_light_basemap(ax, extent, scale="10m", include_roads=True):
+def add_light_basemap(ax, extent, scale="10m", include_roads=True, include_counties=True):
     ax.set_extent(extent, crs=ccrs.PlateCarree())
     ax.set_facecolor(LAND)
     ax.add_feature(cfeature.LAND.with_scale(scale), facecolor=LAND, zorder=0)
@@ -164,11 +164,12 @@ def add_light_basemap(ax, extent, scale="10m", include_roads=True):
             ax.add_feature(roads, linewidth=0.45, alpha=0.85, zorder=3)
         except Exception:
             pass
-    try:
-        counties = cfeature.NaturalEarthFeature("cultural", "admin_2_counties", scale, facecolor="none", edgecolor="#777777")
-        ax.add_feature(counties, linewidth=0.35, zorder=4)
-    except Exception:
-        pass
+    if include_counties:
+        try:
+            counties = cfeature.NaturalEarthFeature("cultural", "admin_2_counties", "10m", facecolor="none", edgecolor="#777777")
+            ax.add_feature(counties, linewidth=0.35, zorder=4)
+        except Exception:
+            pass
     ax.add_feature(cfeature.COASTLINE.with_scale(scale), edgecolor="#111111", linewidth=1.0, zorder=5)
     ax.add_feature(cfeature.STATES.with_scale(scale), edgecolor=BOUNDARY, linewidth=0.8, zorder=6)
     ax.set_xticks([]); ax.set_yticks([])
@@ -275,7 +276,7 @@ def draw_sidebar(ax, props, geom, color):
 
 def draw_overview(ax, geom, color):
     extent = [-92.7, -87.9, 28.7, 31.6]
-    add_light_basemap(ax, extent, scale="50m", include_roads=False)
+    add_light_basemap(ax, extent, scale="50m", include_roads=False, include_counties=False)
     add_warning_polygon(ax, geom, color)
     ax.text(-91.35, 30.1, "LA", fontsize=8, color="#333333", transform=ccrs.PlateCarree())
     ax.text(-89.85, 30.55, "MS", fontsize=8, color="#333333", transform=ccrs.PlateCarree())
@@ -285,7 +286,7 @@ def draw_overview(ax, geom, color):
 
 def draw_main_map(ax, geom, color):
     extent = map_extent_for_geom(geom)
-    add_light_basemap(ax, extent, scale="10m", include_roads=True)
+    add_light_basemap(ax, extent, scale="10m", include_roads=True, include_counties=True)
     add_warning_polygon(ax, geom, color)
     add_city_labels(ax, extent, geom, max_count=13)
     # crude interstate shields/labels for visual similarity
