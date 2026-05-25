@@ -1,33 +1,9 @@
 {
-  "generated_at": "2026-05-25T21:03:15.375258+00:00",
-  "mode": "active",
+  "generated_at": "2026-05-25T22:15:50.480638+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
-  "count": 4,
+  "count": 1,
   "warnings": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c61723f37564cea65ce208e7f532d6c2ad299a7f.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued May 25 at 3:47PM CDT until May 25 at 4:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-05-25T15:47:00-05:00",
-      "effective": "2026-05-25T15:47:00-05:00",
-      "expires": "2026-05-25T16:45:00-05:00",
-      "areaDesc": "Hancock, MS; Pearl River, MS",
-      "filename": "KLIX-FF-W-0041.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0041.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4b8609ea918ed0b216a69a350c1afa9913ac4c97.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued May 25 at 3:23PM CDT until May 25 at 4:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-05-25T15:23:00-05:00",
-      "effective": "2026-05-25T15:23:00-05:00",
-      "expires": "2026-05-25T16:45:00-05:00",
-      "areaDesc": "Hancock, MS; Harrison, MS",
-      "filename": "KLIX-FF-W-0040.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0040.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.325adb048d42f39b33794d68be08ed1070f0f65b.001.1",
       "event": "Flash Flood Warning",
@@ -38,18 +14,6 @@
       "areaDesc": "Hancock, MS; Pearl River, MS",
       "filename": "KLIX-FF-W-0043.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0043.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b219117e746409877649a562ef816e2027da6ec6.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued May 25 at 2:17PM CDT until May 25 at 4:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-05-25T14:17:00-05:00",
-      "effective": "2026-05-25T14:17:00-05:00",
-      "expires": "2026-05-25T16:45:00-05:00",
-      "areaDesc": "Pearl River, MS",
-      "filename": "KLIX-FF-W-0042.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0042.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
