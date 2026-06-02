@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-02T17:13:02.149471+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-06-02T20:20:31.968610+00:00",
+  "mode": "active",
   "wfo": "LIX",
-  "count": 1,
+  "count": 2,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.163aea001f6aaa9c5d242ac92a8372050e99da23.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued June 1 at 3:27PM CDT until June 1 at 6:30PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-01T15:27:00-05:00",
-      "effective": "2026-06-01T15:27:00-05:00",
-      "expires": "2026-06-01T18:30:00-05:00",
-      "areaDesc": "St. Tammany, LA; Hancock, MS; Pearl River, MS",
-      "filename": "KLIX-FF-W-0050.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0050.png",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.57f82960456d9b543ae68fc090908477c0b89da1.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued June 2 at 3:10PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-02T15:10:00-05:00",
+      "effective": "2026-06-02T15:10:00-05:00",
+      "expires": "2026-06-02T15:30:00-05:00",
+      "areaDesc": "Washington; Northern Tangipahoa; Northern St. Tammany; Central Tangipahoa",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-57f82960456d9b543ae68fc090908477c0b89da1-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-57f82960456d9b543ae68fc090908477c0b89da1-001-1.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.177a1ca2d860b8e1a4ebef2f4639a9cf181b9438.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued June 2 at 3:07PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-02T15:07:00-05:00",
+      "effective": "2026-06-02T15:07:00-05:00",
+      "expires": "2026-06-02T15:30:00-05:00",
+      "areaDesc": "Northern St. Tammany; Southwestern St. Tammany; Central Tangipahoa",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-177a1ca2d860b8e1a4ebef2f4639a9cf181b9438-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-177a1ca2d860b8e1a4ebef2f4639a9cf181b9438-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
