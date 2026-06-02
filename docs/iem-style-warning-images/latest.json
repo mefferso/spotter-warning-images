@@ -1,19 +1,43 @@
 {
-  "generated_at": "2026-06-02T19:05:35.857363+00:00",
+  "generated_at": "2026-06-02T22:03:48.944094+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 1,
+  "count": 3,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.839d4a439796f9a15084484ff3a68c86e48d18c3.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.685f4348245768fa9dc7d951afc628e57c53df92.001.1",
+      "event": "Severe Thunderstorm Warning",
+      "headline": "Severe Thunderstorm Warning issued June 2 at 5:01PM CDT until June 2 at 6:00PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-02T17:01:00-05:00",
+      "effective": "2026-06-02T17:01:00-05:00",
+      "expires": "2026-06-02T18:00:00-05:00",
+      "areaDesc": "Livingston, LA; St. Helena, LA; Tangipahoa, LA",
+      "filename": "KLIX-SV-W-0072.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/KLIX-SV-W-0072.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3cecdef9e2eb1aeb06a138c7feaafdc43296fe7b.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued June 2 at 2:03PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-02T14:03:00-05:00",
-      "effective": "2026-06-02T14:03:00-05:00",
-      "expires": "2026-06-02T14:30:00-05:00",
-      "areaDesc": "Upper Lafourche; Lower St. Charles",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-839d4a439796f9a15084484ff3a68c86e48d18c3-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-839d4a439796f9a15084484ff3a68c86e48d18c3-001-1.png",
+      "headline": "Special Weather Statement issued June 2 at 4:58PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-02T16:58:00-05:00",
+      "effective": "2026-06-02T16:58:00-05:00",
+      "expires": "2026-06-02T17:30:00-05:00",
+      "areaDesc": "St. Helena; Northern Tangipahoa; Central Tangipahoa; Lower Tangipahoa; Northern Livingston; Southern Livingston",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-3cecdef9e2eb1aeb06a138c7feaafdc43296fe7b-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-3cecdef9e2eb1aeb06a138c7feaafdc43296fe7b-001-1.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.51f8b576a29eed6450be4bf046eb214061e93b25.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued June 2 at 4:51PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-02T16:51:00-05:00",
+      "effective": "2026-06-02T16:51:00-05:00",
+      "expires": "2026-06-02T17:15:00-05:00",
+      "areaDesc": "St. Helena; Amite",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-51f8b576a29eed6450be4bf046eb214061e93b25-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-51f8b576a29eed6450be4bf046eb214061e93b25-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
