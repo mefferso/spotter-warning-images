@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-03T00:01:26.394519+00:00",
+  "generated_at": "2026-06-03T05:07:35.575991+00:00",
   "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff9b09336c50abe94d03bd84a771133f34a1bdd3.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22b2e87d2f322c9b04e04a32285053e87a9b3edc.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued June 2 at 6:02PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-02T18:02:00-05:00",
-      "effective": "2026-06-02T18:02:00-05:00",
-      "expires": "2026-06-02T19:00:00-05:00",
-      "areaDesc": "Northern Jackson; Southern Jackson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-ff9b09336c50abe94d03bd84a771133f34a1bdd3-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-ff9b09336c50abe94d03bd84a771133f34a1bdd3-001-1.png",
+      "headline": "Special Weather Statement issued June 2 at 10:17PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-02T22:17:00-05:00",
+      "effective": "2026-06-02T22:17:00-05:00",
+      "expires": "2026-06-02T22:45:00-05:00",
+      "areaDesc": "Upper St. Bernard; Lower St. Bernard; Western Orleans; Upper Plaquemines; Central Plaquemines",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-22b2e87d2f322c9b04e04a32285053e87a9b3edc-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-22b2e87d2f322c9b04e04a32285053e87a9b3edc-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
