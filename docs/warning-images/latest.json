@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-06T16:38:23.342028+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-06-06T17:47:41.989302+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22b2e87d2f322c9b04e04a32285053e87a9b3edc.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4ab2ba0b611b880d4032f78d158022d7ab9985a9.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued June 2 at 10:17PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-02T22:17:00-05:00",
-      "effective": "2026-06-02T22:17:00-05:00",
-      "expires": "2026-06-02T22:45:00-05:00",
-      "areaDesc": "Upper St. Bernard; Lower St. Bernard; Western Orleans; Upper Plaquemines; Central Plaquemines",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-22b2e87d2f322c9b04e04a32285053e87a9b3edc-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-22b2e87d2f322c9b04e04a32285053e87a9b3edc-001-1.png",
+      "headline": "Special Weather Statement issued June 6 at 12:42PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-06T12:42:00-05:00",
+      "effective": "2026-06-06T12:42:00-05:00",
+      "expires": "2026-06-06T13:15:00-05:00",
+      "areaDesc": "St. John The Baptist; Upper Lafourche; Lower St. Charles",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-4ab2ba0b611b880d4032f78d158022d7ab9985a9-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-4ab2ba0b611b880d4032f78d158022d7ab9985a9-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
