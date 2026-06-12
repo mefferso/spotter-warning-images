@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-12T22:14:09.880690+00:00",
+  "generated_at": "2026-06-12T23:53:49.422027+00:00",
   "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c8c56decf3d496e4ca153e201bc39e1075ea585d.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued June 6 at 7:34PM CDT until June 6 at 10:30PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-06T19:34:00-05:00",
-      "effective": "2026-06-06T19:34:00-05:00",
-      "expires": "2026-06-06T22:30:00-05:00",
-      "areaDesc": "Hancock, MS",
-      "filename": "KLIX-FF-W-0057.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0057.png",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae3b0df56dcb6b1505ca1abfa14c02c1195a0a14.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued June 12 at 5:24PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-12T17:24:00-05:00",
+      "effective": "2026-06-12T17:24:00-05:00",
+      "expires": "2026-06-12T18:00:00-05:00",
+      "areaDesc": "Northern Tangipahoa; Northern St. Tammany; Central Tangipahoa",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-ae3b0df56dcb6b1505ca1abfa14c02c1195a0a14-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-ae3b0df56dcb6b1505ca1abfa14c02c1195a0a14-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
