@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-06-16T20:24:47.732853+00:00",
+  "generated_at": "2026-06-16T22:28:47.433904+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f7eb397e37c438228762c5f542f779afa9af8350.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df6c776657b8d80d0f4815b32484ab4fd3faea25.001.1",
       "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued June 16 at 2:36PM CDT until June 16 at 4:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-16T14:36:00-05:00",
-      "effective": "2026-06-16T14:36:00-05:00",
-      "expires": "2026-06-16T16:45:00-05:00",
-      "areaDesc": "Tangipahoa, LA; Washington, LA; Pearl River, MS; Walthall, MS",
-      "filename": "KLIX-FF-W-0064.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0064.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c1798a7821df264d02ae8f0115b12a595e5d1d17.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued June 16 at 2:13PM CDT until June 16 at 5:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-16T14:13:00-05:00",
-      "effective": "2026-06-16T14:13:00-05:00",
-      "expires": "2026-06-16T17:15:00-05:00",
-      "areaDesc": "Ascension, LA; East Baton Rouge, LA; Iberville, LA; Livingston, LA; Pointe Coupee, LA; St. Helena, LA; West Baton Rouge, LA",
-      "filename": "KLIX-FF-W-0066.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0066.png",
+      "headline": "Flash Flood Warning issued June 16 at 4:56PM CDT until June 16 at 8:00PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-16T16:56:00-05:00",
+      "effective": "2026-06-16T16:56:00-05:00",
+      "expires": "2026-06-16T20:00:00-05:00",
+      "areaDesc": "Jefferson, LA; Orleans, LA; St. Bernard, LA; St. Charles, LA",
+      "filename": "KLIX-FF-W-0068.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0068.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
