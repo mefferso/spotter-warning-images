@@ -1,21 +1,9 @@
 {
-  "generated_at": "2026-06-20T21:40:47.489391+00:00",
+  "generated_at": "2026-06-20T22:50:42.307082+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8ee6b7869802c5d2a6ff3e29f6f01bf45149c522.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued June 20 at 3:31PM CDT until June 20 at 6:00PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-20T15:31:00-05:00",
-      "effective": "2026-06-20T15:31:00-05:00",
-      "expires": "2026-06-20T18:00:00-05:00",
-      "areaDesc": "Jefferson, LA; St. Charles, LA",
-      "filename": "KLIX-FF-W-0093.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/KLIX-FF-W-0093.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.790e176ff1741be18a01a11b61064afc76df72a6.001.1",
       "event": "Flash Flood Warning",
