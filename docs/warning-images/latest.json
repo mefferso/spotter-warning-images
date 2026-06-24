@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-06-24T21:02:00.323432+00:00",
-  "mode": "active",
+  "generated_at": "2026-06-24T22:25:03.300609+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.efd1b96326a6d9ac194dab12e1f19f58cb80fcd1.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58942b867e5be3f949e9b4d272fa2d6e23f874c9.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued June 24 at 3:38PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-24T15:38:00-05:00",
-      "effective": "2026-06-24T15:38:00-05:00",
-      "expires": "2026-06-24T16:15:00-05:00",
-      "areaDesc": "St. Helena; Northern Tangipahoa; Central Tangipahoa; Northern Livingston",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-efd1b96326a6d9ac194dab12e1f19f58cb80fcd1-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-efd1b96326a6d9ac194dab12e1f19f58cb80fcd1-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed07de2eb4534e9e7e62f3334ebc9499c2991506.001.1",
-      "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued June 24 at 3:55PM CDT until June 24 at 4:30PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-24T15:55:00-05:00",
-      "effective": "2026-06-24T15:55:00-05:00",
-      "expires": "2026-06-24T16:30:00-05:00",
-      "areaDesc": "Jackson, MS",
-      "filename": "KLIX-SV-W-0096.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0096.png",
+      "headline": "Special Weather Statement issued June 24 at 4:27PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-24T16:27:00-05:00",
+      "effective": "2026-06-24T16:27:00-05:00",
+      "expires": "2026-06-24T17:00:00-05:00",
+      "areaDesc": "Southeast St. Tammany; Southern Hancock",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-58942b867e5be3f949e9b4d272fa2d6e23f874c9-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-58942b867e5be3f949e9b4d272fa2d6e23f874c9-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
