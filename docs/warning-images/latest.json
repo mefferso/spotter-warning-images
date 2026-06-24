@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-24T19:20:03.249572+00:00",
+  "generated_at": "2026-06-24T21:02:00.323432+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 1,
+  "count": 2,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a0d92d3028457b6fc9469388b27f4cf4e8d3341.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.efd1b96326a6d9ac194dab12e1f19f58cb80fcd1.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued June 24 at 2:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-24T14:15:00-05:00",
-      "effective": "2026-06-24T14:15:00-05:00",
-      "expires": "2026-06-24T15:00:00-05:00",
-      "areaDesc": "Washington; Northern St. Tammany; Pearl River",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-0a0d92d3028457b6fc9469388b27f4cf4e8d3341-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-0a0d92d3028457b6fc9469388b27f4cf4e8d3341-001-1.png",
+      "headline": "Special Weather Statement issued June 24 at 3:38PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-24T15:38:00-05:00",
+      "effective": "2026-06-24T15:38:00-05:00",
+      "expires": "2026-06-24T16:15:00-05:00",
+      "areaDesc": "St. Helena; Northern Tangipahoa; Central Tangipahoa; Northern Livingston",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-efd1b96326a6d9ac194dab12e1f19f58cb80fcd1-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-efd1b96326a6d9ac194dab12e1f19f58cb80fcd1-001-1.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed07de2eb4534e9e7e62f3334ebc9499c2991506.001.1",
+      "event": "Severe Thunderstorm Warning",
+      "headline": "Severe Thunderstorm Warning issued June 24 at 3:55PM CDT until June 24 at 4:30PM CDT by NWS New Orleans LA",
+      "sent": "2026-06-24T15:55:00-05:00",
+      "effective": "2026-06-24T15:55:00-05:00",
+      "expires": "2026-06-24T16:30:00-05:00",
+      "areaDesc": "Jackson, MS",
+      "filename": "KLIX-SV-W-0096.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0096.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
