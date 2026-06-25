@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-25T21:57:40.753692+00:00",
-  "mode": "active",
+  "generated_at": "2026-06-25T23:25:36.408126+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
-  "count": 3,
+  "count": 1,
   "warnings": [
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.41044d7f50ae67cb69dae01a4a1f314a75068065.001.1",
@@ -14,30 +14,6 @@
       "areaDesc": "Northern Jackson; Southern Jackson",
       "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-41044d7f50ae67cb69dae01a4a1f314a75068065-001-1.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-41044d7f50ae67cb69dae01a4a1f314a75068065-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6ff87b793d025140d4daa99b2f7b7689f70c217c.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued June 25 at 4:43PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-25T16:43:00-05:00",
-      "effective": "2026-06-25T16:43:00-05:00",
-      "expires": "2026-06-25T17:15:00-05:00",
-      "areaDesc": "Northern Harrison; Northern Jackson; Southern Harrison; Southern Jackson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-6ff87b793d025140d4daa99b2f7b7689f70c217c-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-6ff87b793d025140d4daa99b2f7b7689f70c217c-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e73b2506398dce9ae2d90069fec64bf37dec1c59.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued June 25 at 4:41PM CDT by NWS New Orleans LA",
-      "sent": "2026-06-25T16:41:00-05:00",
-      "effective": "2026-06-25T16:41:00-05:00",
-      "expires": "2026-06-25T17:15:00-05:00",
-      "areaDesc": "Northern Hancock; Northern Harrison; Southern Harrison",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-e73b2506398dce9ae2d90069fec64bf37dec1c59-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-e73b2506398dce9ae2d90069fec64bf37dec1c59-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
