@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-07-01T18:26:18.494401+00:00",
+  "generated_at": "2026-07-01T20:23:33.924647+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db90bb20386e78665e9f1621af5f05ff68fcfe34.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5531f7b4420fc06a3e6f5aa428e91fed2b123a05.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 1 at 1:19PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-01T13:19:00-05:00",
-      "effective": "2026-07-01T13:19:00-05:00",
-      "expires": "2026-07-01T13:45:00-05:00",
-      "areaDesc": "Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-db90bb20386e78665e9f1621af5f05ff68fcfe34-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-db90bb20386e78665e9f1621af5f05ff68fcfe34-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b0129b69447061946df2c19cf963ca9e8839eeb7.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 1 at 12:56PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-01T12:56:00-05:00",
-      "effective": "2026-07-01T12:56:00-05:00",
-      "expires": "2026-07-01T13:30:00-05:00",
-      "areaDesc": "Lower Lafourche",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-b0129b69447061946df2c19cf963ca9e8839eeb7-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-b0129b69447061946df2c19cf963ca9e8839eeb7-001-1.png",
+      "headline": "Special Weather Statement issued July 1 at 3:07PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-01T15:07:00-05:00",
+      "effective": "2026-07-01T15:07:00-05:00",
+      "expires": "2026-07-01T15:30:00-05:00",
+      "areaDesc": "East Baton Rouge; Northern Livingston; Southern Livingston; Western Ascension",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-5531f7b4420fc06a3e6f5aa428e91fed2b123a05-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-5531f7b4420fc06a3e6f5aa428e91fed2b123a05-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
