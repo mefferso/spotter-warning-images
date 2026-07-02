@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-07-02T20:10:50.763172+00:00",
+  "generated_at": "2026-07-02T21:31:35.921850+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8f64ee3b53d9f00bf4b732bc733312c8a85569bd.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.315a54f5528e70a1c05daa48dbced829f9b28f06.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 2 at 3:09PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-02T15:09:00-05:00",
-      "effective": "2026-07-02T15:09:00-05:00",
-      "expires": "2026-07-02T16:00:00-05:00",
-      "areaDesc": "Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-8f64ee3b53d9f00bf4b732bc733312c8a85569bd-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-8f64ee3b53d9f00bf4b732bc733312c8a85569bd-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f32aaf91bed876042f509139d37f1b814cd0ecfa.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 2 at 3:07PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-02T15:07:00-05:00",
-      "effective": "2026-07-02T15:07:00-05:00",
-      "expires": "2026-07-02T15:45:00-05:00",
-      "areaDesc": "Pearl River; Northern Hancock",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-f32aaf91bed876042f509139d37f1b814cd0ecfa-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-f32aaf91bed876042f509139d37f1b814cd0ecfa-001-1.png",
+      "headline": "Special Weather Statement issued July 2 at 4:22PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-02T16:22:00-05:00",
+      "effective": "2026-07-02T16:22:00-05:00",
+      "expires": "2026-07-02T17:00:00-05:00",
+      "areaDesc": "East Baton Rouge; St. James; Northern Livingston; Southern Livingston; Western Ascension; Eastern Ascension",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-315a54f5528e70a1c05daa48dbced829f9b28f06-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-315a54f5528e70a1c05daa48dbced829f9b28f06-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
