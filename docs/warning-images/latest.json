@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-03T19:44:21.057810+00:00",
-  "mode": "active",
+  "generated_at": "2026-07-03T20:45:25.575780+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c82ee50307f6b53e112b72c5d5d91d6491e5616.001.1",
@@ -14,18 +14,6 @@
       "areaDesc": "Lower Terrebonne",
       "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-8c82ee50307f6b53e112b72c5d5d91d6491e5616-001-1.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-8c82ee50307f6b53e112b72c5d5d91d6491e5616-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b19f444f2977a14220ec09735f735bedce650c4b.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 3 at 2:10PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-03T14:10:00-05:00",
-      "effective": "2026-07-03T14:10:00-05:00",
-      "expires": "2026-07-03T15:00:00-05:00",
-      "areaDesc": "Iberville; Assumption; St. James; St. John The Baptist; Western Ascension; Eastern Ascension; Upper Lafourche",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-b19f444f2977a14220ec09735f735bedce650c4b-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-b19f444f2977a14220ec09735f735bedce650c4b-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
