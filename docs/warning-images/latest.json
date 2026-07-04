@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-04T09:54:59.968009+00:00",
+  "generated_at": "2026-07-04T11:21:40.657729+00:00",
   "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4dfb0a593740fc6d252394f95f72974b343a09d9.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.351a0d46309d79abac45793d71a6eb3253cd0f4c.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 3 at 9:04PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-03T21:04:00-05:00",
-      "effective": "2026-07-03T21:04:00-05:00",
-      "expires": "2026-07-03T21:45:00-05:00",
-      "areaDesc": "Pearl River",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-4dfb0a593740fc6d252394f95f72974b343a09d9-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-4dfb0a593740fc6d252394f95f72974b343a09d9-001-1.png",
+      "headline": "Special Weather Statement issued July 4 at 5:12AM CDT by NWS New Orleans LA",
+      "sent": "2026-07-04T05:12:00-05:00",
+      "effective": "2026-07-04T05:12:00-05:00",
+      "expires": "2026-07-04T06:15:00-05:00",
+      "areaDesc": "Lower Terrebonne",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-351a0d46309d79abac45793d71a6eb3253cd0f4c-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-351a0d46309d79abac45793d71a6eb3253cd0f4c-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
