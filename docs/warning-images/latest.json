@@ -1,69 +1,9 @@
 {
-  "generated_at": "2026-07-05T22:13:26.142784+00:00",
+  "generated_at": "2026-07-05T23:20:08.716486+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 11,
+  "count": 5,
   "warnings": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3536cc0a6e83a17072ef19b65e0058e87e03fd23.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 5 at 5:03PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T17:03:00-05:00",
-      "effective": "2026-07-05T17:03:00-05:00",
-      "expires": "2026-07-05T17:30:00-05:00",
-      "areaDesc": "West Feliciana; East Feliciana; St. Helena; Wilkinson; Amite",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-3536cc0a6e83a17072ef19b65e0058e87e03fd23-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-3536cc0a6e83a17072ef19b65e0058e87e03fd23-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9776ffc6e7aced6e470461c998a3684f93c39ed.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 5 at 5:01PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T17:01:00-05:00",
-      "effective": "2026-07-05T17:01:00-05:00",
-      "expires": "2026-07-05T17:45:00-05:00",
-      "areaDesc": "Lower Plaquemines",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c9776ffc6e7aced6e470461c998a3684f93c39ed-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c9776ffc6e7aced6e470461c998a3684f93c39ed-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.96565d0fa09b162f71108ecb721551d03af9de20.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 5 at 5:00PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T17:00:00-05:00",
-      "effective": "2026-07-05T17:00:00-05:00",
-      "expires": "2026-07-05T17:45:00-05:00",
-      "areaDesc": "Coastal Jefferson; Lower Lafourche; Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-96565d0fa09b162f71108ecb721551d03af9de20-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-96565d0fa09b162f71108ecb721551d03af9de20-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.14fb06601bb25761f64d31bb91f3ab9ecc3d810b.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 5 at 4:57PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T16:57:00-05:00",
-      "effective": "2026-07-05T16:57:00-05:00",
-      "expires": "2026-07-05T17:30:00-05:00",
-      "areaDesc": "Iberville",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-14fb06601bb25761f64d31bb91f3ab9ecc3d810b-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-14fb06601bb25761f64d31bb91f3ab9ecc3d810b-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1854f2ae1bc5f37c4a422b37702b823f9b08b7cf.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued July 5 at 4:40PM CDT until July 5 at 5:30PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T16:40:00-05:00",
-      "effective": "2026-07-05T16:40:00-05:00",
-      "expires": "2026-07-05T17:30:00-05:00",
-      "areaDesc": "Jefferson, LA; Orleans, LA; Plaquemines, LA; St. Bernard, LA",
-      "filename": "KLIX-FF-W-0096.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0096.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c379efc75968ba63833b9a29145f66cd9bc38cd7.001.1",
       "event": "Flash Flood Warning",
@@ -113,27 +53,15 @@
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     },
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2cf9c01e7601e3767ba019ac92f4d409fae916f7.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued July 5 at 2:59PM CDT until July 5 at 6:00PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T14:59:00-05:00",
-      "effective": "2026-07-05T14:59:00-05:00",
-      "expires": "2026-07-05T18:00:00-05:00",
-      "areaDesc": "Ascension, LA; East Baton Rouge, LA; Livingston, LA",
-      "filename": "KLIX-FF-W-0098.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0098.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e9824ae032d1e3a2bfb41e49bbdbc18343f9118c.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued July 5 at 2:44PM CDT until July 5 at 5:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T14:44:00-05:00",
-      "effective": "2026-07-05T14:44:00-05:00",
-      "expires": "2026-07-05T17:45:00-05:00",
-      "areaDesc": "St. Charles, LA; St. John The Baptist, LA",
-      "filename": "KLIX-FF-W-0097.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0097.png",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d9e7f32fe61b40a5d299e7fcc2b2ebbc8e29eca4.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued July 5 at 6:08PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-05T18:08:00-05:00",
+      "effective": "2026-07-05T18:08:00-05:00",
+      "expires": "2026-07-05T19:00:00-05:00",
+      "areaDesc": "Wilkinson",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-d9e7f32fe61b40a5d299e7fcc2b2ebbc8e29eca4-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-d9e7f32fe61b40a5d299e7fcc2b2ebbc8e29eca4-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
