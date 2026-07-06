@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-06T16:39:25.247893+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-07-06T18:30:32.202532+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.865f055b5809b4b552633d4840dc4333f324f17c.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e819cc5d3945e011adc684a1c122aceb227e95ed.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 5 at 7:13PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-05T19:13:00-05:00",
-      "effective": "2026-07-05T19:13:00-05:00",
-      "expires": "2026-07-05T19:45:00-05:00",
-      "areaDesc": "Pointe Coupee; West Feliciana; Wilkinson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-865f055b5809b4b552633d4840dc4333f324f17c-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-865f055b5809b4b552633d4840dc4333f324f17c-001-1.png",
+      "headline": "Special Weather Statement issued July 6 at 1:26PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-06T13:26:00-05:00",
+      "effective": "2026-07-06T13:26:00-05:00",
+      "expires": "2026-07-06T14:00:00-05:00",
+      "areaDesc": "Upper Lafourche; Lower Lafourche",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-e819cc5d3945e011adc684a1c122aceb227e95ed-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-e819cc5d3945e011adc684a1c122aceb227e95ed-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
