@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-06T23:05:45.464947+00:00",
-  "mode": "active",
+  "generated_at": "2026-07-07T00:18:12.226567+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6e4e6486df60b3b7723f9fc071095ebc5f235479.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0a7166d2ccdd51b26867e2406c647a1e8e472afb.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 6 at 5:42PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-06T17:42:00-05:00",
-      "effective": "2026-07-06T17:42:00-05:00",
-      "expires": "2026-07-06T18:30:00-05:00",
+      "headline": "Special Weather Statement issued July 6 at 6:28PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-06T18:28:00-05:00",
+      "effective": "2026-07-06T18:28:00-05:00",
+      "expires": "2026-07-06T19:15:00-05:00",
       "areaDesc": "Northern Tangipahoa; Central Tangipahoa",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-6e4e6486df60b3b7723f9fc071095ebc5f235479-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-6e4e6486df60b3b7723f9fc071095ebc5f235479-001-1.png",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-0a7166d2ccdd51b26867e2406c647a1e8e472afb-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-0a7166d2ccdd51b26867e2406c647a1e8e472afb-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
