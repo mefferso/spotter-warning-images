@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-07T23:12:59.856528+00:00",
-  "mode": "active",
+  "generated_at": "2026-07-08T00:14:49.456274+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0acf6b4fbed1ecd8bf36081c1839d392252ce307.002.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5d2aad9bfd34c735ccc49bd88dd160bb123b6467.001.1",
       "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued July 7 at 5:52PM CDT until July 7 at 7:00PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-07T17:52:00-05:00",
-      "effective": "2026-07-07T17:52:00-05:00",
+      "headline": "Flash Flood Warning issued July 7 at 5:01PM CDT until July 7 at 7:00PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-07T17:01:00-05:00",
+      "effective": "2026-07-07T17:01:00-05:00",
       "expires": "2026-07-07T19:00:00-05:00",
-      "areaDesc": "Jefferson, LA; Orleans, LA; St. Bernard, LA",
+      "areaDesc": "Jefferson, LA; Orleans, LA; St. Bernard, LA; St. Charles, LA",
       "filename": "KLIX-FF-W-0103.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/KLIX-FF-W-0103.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
