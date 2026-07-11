@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-11T21:26:14.368642+00:00",
+  "generated_at": "2026-07-11T22:13:44.709730+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 5,
+  "count": 2,
   "warnings": [
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b84434b39b84138a57057245b830eaffb16de48a.001.1",
@@ -17,18 +17,6 @@
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     },
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2ac1c90b7b0d1d53dc64daddabefc5261651a06f.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 11 at 4:07PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-11T16:07:00-05:00",
-      "effective": "2026-07-11T16:07:00-05:00",
-      "expires": "2026-07-11T16:45:00-05:00",
-      "areaDesc": "Pointe Coupee; West Baton Rouge",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-2ac1c90b7b0d1d53dc64daddabefc5261651a06f-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-2ac1c90b7b0d1d53dc64daddabefc5261651a06f-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1fd36e7faf7fba9bbc06abda50c60e70938e26ff.001.1",
       "event": "Flash Flood Warning",
       "headline": "Flash Flood Warning issued July 11 at 3:55PM CDT until July 11 at 6:30PM CDT by NWS New Orleans LA",
@@ -38,30 +26,6 @@
       "areaDesc": "East Baton Rouge, LA",
       "filename": "KLIX-FF-W-0108.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0108.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aba10287d3ad9cb8b5680ea1b103262b33887cd5.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 11 at 3:49PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-11T15:49:00-05:00",
-      "effective": "2026-07-11T15:49:00-05:00",
-      "expires": "2026-07-11T16:30:00-05:00",
-      "areaDesc": "Pointe Coupee; West Feliciana; East Feliciana; Iberville; West Baton Rouge; East Baton Rouge; Wilkinson; Amite",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-aba10287d3ad9cb8b5680ea1b103262b33887cd5-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-aba10287d3ad9cb8b5680ea1b103262b33887cd5-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4d6c1c214be8ea4288715da296dd7bbfcc7ec30c.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued July 11 at 1:51PM CDT until July 11 at 4:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-11T13:51:00-05:00",
-      "effective": "2026-07-11T13:51:00-05:00",
-      "expires": "2026-07-11T16:45:00-05:00",
-      "areaDesc": "St. Charles, LA",
-      "filename": "KLIX-FF-W-0107.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0107.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
