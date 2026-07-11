@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-11T16:30:23.245771+00:00",
+  "generated_at": "2026-07-11T17:33:08.602647+00:00",
   "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a8970efa0e218268f9593eba5b6cd228d858c89.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8fcae77c77499d5a353c255753cb746488f5d862.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 10 at 2:26PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-10T14:26:00-05:00",
-      "effective": "2026-07-10T14:26:00-05:00",
-      "expires": "2026-07-10T15:00:00-05:00",
-      "areaDesc": "East Feliciana; St. Helena; Northern Livingston; Amite",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-9a8970efa0e218268f9593eba5b6cd228d858c89-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-9a8970efa0e218268f9593eba5b6cd228d858c89-001-1.png",
+      "headline": "Special Weather Statement issued July 11 at 12:02PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-11T12:02:00-05:00",
+      "effective": "2026-07-11T12:02:00-05:00",
+      "expires": "2026-07-11T12:30:00-05:00",
+      "areaDesc": "Lower Plaquemines",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-8fcae77c77499d5a353c255753cb746488f5d862-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-8fcae77c77499d5a353c255753cb746488f5d862-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
