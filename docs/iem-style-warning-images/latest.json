@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-13T11:30:25.933017+00:00",
+  "generated_at": "2026-07-13T13:41:02.116176+00:00",
   "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c0cab11217cbabb56e8aeaa88a56cc49cd56ec55.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f64bf6b31a2aa9e5eccfc41f026bcaa90f9a050b.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 13 at 5:44AM CDT by NWS New Orleans LA",
-      "sent": "2026-07-13T05:44:00-05:00",
-      "effective": "2026-07-13T05:44:00-05:00",
-      "expires": "2026-07-13T06:30:00-05:00",
-      "areaDesc": "Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c0cab11217cbabb56e8aeaa88a56cc49cd56ec55-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c0cab11217cbabb56e8aeaa88a56cc49cd56ec55-001-1.png",
+      "headline": "Special Weather Statement issued July 13 at 6:38AM CDT by NWS New Orleans LA",
+      "sent": "2026-07-13T06:38:00-05:00",
+      "effective": "2026-07-13T06:38:00-05:00",
+      "expires": "2026-07-13T07:15:00-05:00",
+      "areaDesc": "Lower St. Bernard; Lower Plaquemines",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-f64bf6b31a2aa9e5eccfc41f026bcaa90f9a050b-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-f64bf6b31a2aa9e5eccfc41f026bcaa90f9a050b-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
