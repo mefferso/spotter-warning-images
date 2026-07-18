@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-18T21:05:09.775787+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-07-18T22:02:24.990849+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f4befba91e68463ed586eb8e5885374c5810e99.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.16a06cb9ce8b3cf9c309b41a8d8b8a3a5285a4b7.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 14 at 7:24AM CDT by NWS New Orleans LA",
-      "sent": "2026-07-14T07:24:00-05:00",
-      "effective": "2026-07-14T07:24:00-05:00",
-      "expires": "2026-07-14T08:15:00-05:00",
-      "areaDesc": "Upper Terrebonne; Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-2f4befba91e68463ed586eb8e5885374c5810e99-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-2f4befba91e68463ed586eb8e5885374c5810e99-001-1.png",
+      "headline": "Special Weather Statement issued July 18 at 4:49PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-18T16:49:00-05:00",
+      "effective": "2026-07-18T16:49:00-05:00",
+      "expires": "2026-07-18T17:15:00-05:00",
+      "areaDesc": "Northern Jackson; Southern Jackson",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-16a06cb9ce8b3cf9c309b41a8d8b8a3a5285a4b7-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-16a06cb9ce8b3cf9c309b41a8d8b8a3a5285a4b7-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
