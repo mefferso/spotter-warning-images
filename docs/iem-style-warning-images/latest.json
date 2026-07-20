@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-20T01:11:15.861138+00:00",
-  "mode": "active",
+  "generated_at": "2026-07-20T04:54:38.205621+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b540714abb425fa860ff67541aca280318662f3b.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7147e202a874ae67c787477d750ea4903b51384e.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 19 at 7:59PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-19T19:59:00-05:00",
-      "effective": "2026-07-19T19:59:00-05:00",
-      "expires": "2026-07-19T20:30:00-05:00",
-      "areaDesc": "Northern Harrison; Northern Jackson; Southern Harrison; Southern Jackson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-b540714abb425fa860ff67541aca280318662f3b-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-b540714abb425fa860ff67541aca280318662f3b-001-1.png",
+      "headline": "Special Weather Statement issued July 19 at 8:22PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-19T20:22:00-05:00",
+      "effective": "2026-07-19T20:22:00-05:00",
+      "expires": "2026-07-19T20:45:00-05:00",
+      "areaDesc": "Southern Jackson",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-7147e202a874ae67c787477d750ea4903b51384e-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-7147e202a874ae67c787477d750ea4903b51384e-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
