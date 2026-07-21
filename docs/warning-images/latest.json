@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-21T00:14:47.540168+00:00",
-  "mode": "active",
+  "generated_at": "2026-07-21T03:48:37.089059+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a5adfee1367f896bfe0b37e6e01c1a9c6a99bef1.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.be4a427c27afdfbd8b3faa55db1db79c26395ade.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 20 at 6:35PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-20T18:35:00-05:00",
-      "effective": "2026-07-20T18:35:00-05:00",
-      "expires": "2026-07-20T19:15:00-05:00",
-      "areaDesc": "Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-a5adfee1367f896bfe0b37e6e01c1a9c6a99bef1-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-a5adfee1367f896bfe0b37e6e01c1a9c6a99bef1-001-1.png",
+      "headline": "Special Weather Statement issued July 20 at 9:24PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-20T21:24:00-05:00",
+      "effective": "2026-07-20T21:24:00-05:00",
+      "expires": "2026-07-20T22:00:00-05:00",
+      "areaDesc": "Central Plaquemines; Lower Plaquemines; Coastal Jefferson",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-be4a427c27afdfbd8b3faa55db1db79c26395ade-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-be4a427c27afdfbd8b3faa55db1db79c26395ade-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
