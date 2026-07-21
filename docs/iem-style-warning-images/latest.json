@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-21T19:48:24.188172+00:00",
+  "generated_at": "2026-07-21T20:55:00.812046+00:00",
   "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1cc97a0ad3db7c9606b04fa0d2f0afa1528cdb09.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5d79a6117497ef4fee82f2e3e134fe8491cdb639.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 21 at 2:23PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-21T14:23:00-05:00",
-      "effective": "2026-07-21T14:23:00-05:00",
-      "expires": "2026-07-21T15:00:00-05:00",
-      "areaDesc": "Assumption; Upper Lafourche; Upper Terrebonne; Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-1cc97a0ad3db7c9606b04fa0d2f0afa1528cdb09-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-1cc97a0ad3db7c9606b04fa0d2f0afa1528cdb09-001-1.png",
+      "headline": "Special Weather Statement issued July 21 at 3:45PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-21T15:45:00-05:00",
+      "effective": "2026-07-21T15:45:00-05:00",
+      "expires": "2026-07-21T16:15:00-05:00",
+      "areaDesc": "Pointe Coupee",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-5d79a6117497ef4fee82f2e3e134fe8491cdb639-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-5d79a6117497ef4fee82f2e3e134fe8491cdb639-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
