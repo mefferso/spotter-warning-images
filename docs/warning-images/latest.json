@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-07-21T23:33:36.665006+00:00",
-  "mode": "active",
+  "generated_at": "2026-07-22T01:02:08.255773+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1edef5a750bbc29cd43387348f9287f5bd243726.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c4d2bdf7c777c5e48642e9a2a214e7be267c0a3.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued July 21 at 6:12PM CDT by NWS New Orleans LA",
-      "sent": "2026-07-21T18:12:00-05:00",
-      "effective": "2026-07-21T18:12:00-05:00",
-      "expires": "2026-07-21T19:00:00-05:00",
-      "areaDesc": "Upper Lafourche; Upper St. Charles; Central St. Charles; Lower St. Charles",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-1edef5a750bbc29cd43387348f9287f5bd243726-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-1edef5a750bbc29cd43387348f9287f5bd243726-001-1.png",
+      "headline": "Special Weather Statement issued July 21 at 7:17PM CDT by NWS New Orleans LA",
+      "sent": "2026-07-21T19:17:00-05:00",
+      "effective": "2026-07-21T19:17:00-05:00",
+      "expires": "2026-07-21T20:00:00-05:00",
+      "areaDesc": "St. John The Baptist; Upper Lafourche; Lower Lafourche; Upper Terrebonne; Lower Terrebonne; Upper St. Charles; Central St. Charles; Lower St. Charles",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-8c4d2bdf7c777c5e48642e9a2a214e7be267c0a3-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-8c4d2bdf7c777c5e48642e9a2a214e7be267c0a3-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
