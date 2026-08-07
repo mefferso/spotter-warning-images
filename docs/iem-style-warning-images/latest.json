@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-07T23:07:12.257952+00:00",
+  "generated_at": "2026-08-07T23:46:54.168916+00:00",
   "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f3f92e792b726ca20d9720da25c37f9a802513e3.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5d62fe7c4dfd0e0a7c78e7f69d1f768e64959e90.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 7 at 4:32PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-07T16:32:00-05:00",
-      "effective": "2026-08-07T16:32:00-05:00",
-      "expires": "2026-08-07T17:15:00-05:00",
-      "areaDesc": "Upper Terrebonne; Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-f3f92e792b726ca20d9720da25c37f9a802513e3-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-f3f92e792b726ca20d9720da25c37f9a802513e3-001-1.png",
+      "headline": "Special Weather Statement issued August 7 at 6:06PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-07T18:06:00-05:00",
+      "effective": "2026-08-07T18:06:00-05:00",
+      "expires": "2026-08-07T18:45:00-05:00",
+      "areaDesc": "Iberville",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-5d62fe7c4dfd0e0a7c78e7f69d1f768e64959e90-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-5d62fe7c4dfd0e0a7c78e7f69d1f768e64959e90-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
