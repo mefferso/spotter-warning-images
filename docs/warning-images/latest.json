@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-08T23:12:00.617521+00:00",
+  "generated_at": "2026-08-08T23:45:07.015570+00:00",
   "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.430a30689247389fbc216ed3f36c91f1ee9513cc.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c55f8fb71dfbeaf12e56a6eb719c0b74e7f3e2cc.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 8 at 5:51PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-08T17:51:00-05:00",
-      "effective": "2026-08-08T17:51:00-05:00",
-      "expires": "2026-08-08T18:15:00-05:00",
-      "areaDesc": "Wilkinson; Amite",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-430a30689247389fbc216ed3f36c91f1ee9513cc-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-430a30689247389fbc216ed3f36c91f1ee9513cc-001-1.png",
+      "headline": "Special Weather Statement issued August 8 at 6:22PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-08T18:22:00-05:00",
+      "effective": "2026-08-08T18:22:00-05:00",
+      "expires": "2026-08-08T19:00:00-05:00",
+      "areaDesc": "Pointe Coupee; West Feliciana",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c55f8fb71dfbeaf12e56a6eb719c0b74e7f3e2cc-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c55f8fb71dfbeaf12e56a6eb719c0b74e7f3e2cc-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
