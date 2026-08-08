@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-08T19:23:01.218822+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-08-08T19:49:33.280761+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5d62fe7c4dfd0e0a7c78e7f69d1f768e64959e90.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.29df20d43afa22c34ee2f950a14356c8d07a2227.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 7 at 6:06PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-07T18:06:00-05:00",
-      "effective": "2026-08-07T18:06:00-05:00",
-      "expires": "2026-08-07T18:45:00-05:00",
-      "areaDesc": "Iberville",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-5d62fe7c4dfd0e0a7c78e7f69d1f768e64959e90-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-5d62fe7c4dfd0e0a7c78e7f69d1f768e64959e90-001-1.png",
+      "headline": "Special Weather Statement issued August 8 at 2:48PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-08T14:48:00-05:00",
+      "effective": "2026-08-08T14:48:00-05:00",
+      "expires": "2026-08-08T15:15:00-05:00",
+      "areaDesc": "St. James; St. John The Baptist",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-29df20d43afa22c34ee2f950a14356c8d07a2227-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-29df20d43afa22c34ee2f950a14356c8d07a2227-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
