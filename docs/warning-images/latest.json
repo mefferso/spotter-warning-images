@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-16T21:47:48.068236+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-08-16T22:00:00.810677+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4bf119f432ae3859d30728729ec2b9153dad0b7.001.1",
-      "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 16 at 4:22PM CDT until August 16 at 5:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-16T16:22:00-05:00",
-      "effective": "2026-08-16T16:22:00-05:00",
-      "expires": "2026-08-16T17:15:00-05:00",
-      "areaDesc": "Harrison, MS; Jackson, MS",
-      "filename": "KLIX-SV-W-0112.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0112.png",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7ff2f0f74eaaf138c85debef344ced6efd0dc9ca.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued August 16 at 4:49PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-16T16:49:00-05:00",
+      "effective": "2026-08-16T16:49:00-05:00",
+      "expires": "2026-08-16T17:30:00-05:00",
+      "areaDesc": "East Feliciana; St. Helena; East Baton Rouge; Northern Livingston",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-7ff2f0f74eaaf138c85debef344ced6efd0dc9ca-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-7ff2f0f74eaaf138c85debef344ced6efd0dc9ca-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
