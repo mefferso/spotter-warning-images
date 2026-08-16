@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-16T19:55:23.890328+00:00",
-  "mode": "active",
+  "generated_at": "2026-08-16T20:25:28.985298+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c0b8bb66dd5d11f3689b5647781cd291f7c25868.001.1",
@@ -14,18 +14,6 @@
       "areaDesc": "Northern St. Tammany; Southwestern St. Tammany",
       "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c0b8bb66dd5d11f3689b5647781cd291f7c25868-001-1.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c0b8bb66dd5d11f3689b5647781cd291f7c25868-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f364db10a624d5fa2efa41c2f1dca9e21cec1242.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 16 at 2:48PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-16T14:48:00-05:00",
-      "effective": "2026-08-16T14:48:00-05:00",
-      "expires": "2026-08-16T15:15:00-05:00",
-      "areaDesc": "Northern St. Tammany; Central Tangipahoa",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-f364db10a624d5fa2efa41c2f1dca9e21cec1242-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-f364db10a624d5fa2efa41c2f1dca9e21cec1242-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
