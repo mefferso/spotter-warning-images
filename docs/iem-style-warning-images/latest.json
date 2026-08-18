@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-18T19:22:15.335996+00:00",
-  "mode": "active",
+  "generated_at": "2026-08-18T19:47:52.005692+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c3120e16698e137adde4a419821e5f4a7ed8eac3.001.1",
@@ -14,18 +14,6 @@
       "areaDesc": "Washington; Walthall; Pearl River",
       "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c3120e16698e137adde4a419821e5f4a7ed8eac3-001-1.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c3120e16698e137adde4a419821e5f4a7ed8eac3-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aa257d84e5126e4310eea9d8ecb834e964f83e57.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 18 at 2:07PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-18T14:07:00-05:00",
-      "effective": "2026-08-18T14:07:00-05:00",
-      "expires": "2026-08-18T14:45:00-05:00",
-      "areaDesc": "Washington; Walthall",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-aa257d84e5126e4310eea9d8ecb834e964f83e57-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-aa257d84e5126e4310eea9d8ecb834e964f83e57-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
