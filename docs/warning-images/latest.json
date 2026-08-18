@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-18T19:45:33.159841+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-08-18T20:00:39.194794+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c3120e16698e137adde4a419821e5f4a7ed8eac3.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cec4dd921a7bfa6671bf634bddabc93782b5250b.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 18 at 2:19PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-18T14:19:00-05:00",
-      "effective": "2026-08-18T14:19:00-05:00",
-      "expires": "2026-08-18T14:45:00-05:00",
-      "areaDesc": "Washington; Walthall; Pearl River",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c3120e16698e137adde4a419821e5f4a7ed8eac3-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c3120e16698e137adde4a419821e5f4a7ed8eac3-001-1.png",
+      "headline": "Special Weather Statement issued August 18 at 2:48PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-18T14:48:00-05:00",
+      "effective": "2026-08-18T14:48:00-05:00",
+      "expires": "2026-08-18T15:30:00-05:00",
+      "areaDesc": "Washington; Northern St. Tammany; Pearl River",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-cec4dd921a7bfa6671bf634bddabc93782b5250b-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-cec4dd921a7bfa6671bf634bddabc93782b5250b-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
