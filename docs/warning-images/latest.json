@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-18T20:57:48.092431+00:00",
+  "generated_at": "2026-08-18T21:15:54.873196+00:00",
   "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.59aaf8b693467b054ba46a5874c0fd67be7d296c.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a47ce11d656af2a49977176d31493d37fa4d8a23.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 18 at 3:39PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-18T15:39:00-05:00",
-      "effective": "2026-08-18T15:39:00-05:00",
-      "expires": "2026-08-18T16:15:00-05:00",
-      "areaDesc": "St. Helena; Washington; Northern Tangipahoa; Northern St. Tammany; Central Tangipahoa",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-59aaf8b693467b054ba46a5874c0fd67be7d296c-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-59aaf8b693467b054ba46a5874c0fd67be7d296c-001-1.png",
+      "headline": "Special Weather Statement issued August 18 at 4:04PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-18T16:04:00-05:00",
+      "effective": "2026-08-18T16:04:00-05:00",
+      "expires": "2026-08-18T16:45:00-05:00",
+      "areaDesc": "St. Helena; Washington; Northern Tangipahoa; Central Tangipahoa",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-a47ce11d656af2a49977176d31493d37fa4d8a23-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-a47ce11d656af2a49977176d31493d37fa4d8a23-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
