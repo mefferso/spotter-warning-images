@@ -1,9 +1,21 @@
 {
-  "generated_at": "2026-08-20T21:37:01.231485+00:00",
+  "generated_at": "2026-08-20T21:58:50.647037+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 1,
+  "count": 2,
   "warnings": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4c1b8214f0ea082805009325e1ea87a49d942517.001.1",
+      "event": "Severe Thunderstorm Warning",
+      "headline": "Severe Thunderstorm Warning issued August 20 at 4:38PM CDT until August 20 at 5:30PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-20T16:38:00-05:00",
+      "effective": "2026-08-20T16:38:00-05:00",
+      "expires": "2026-08-20T17:30:00-05:00",
+      "areaDesc": "Jackson, MS",
+      "filename": "KLIX-SV-W-0114.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0114.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
+    },
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a0a25f407466c96ba050ba1e35fe7b8768f26a13.001.1",
       "event": "Special Weather Statement",
