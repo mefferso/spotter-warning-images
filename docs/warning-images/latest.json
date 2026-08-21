@@ -1,19 +1,43 @@
 {
-  "generated_at": "2026-08-21T19:00:24.652276+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-08-21T19:31:40.191067+00:00",
+  "mode": "active",
   "wfo": "LIX",
-  "count": 1,
+  "count": 3,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfee9a8d95bf1347934ba246a735dd57e6ac7337.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.21b11e4dfbe0a42c124732fd13842ac4e54bf598.001.1",
+      "event": "Severe Thunderstorm Warning",
+      "headline": "Severe Thunderstorm Warning issued August 21 at 2:26PM CDT until August 21 at 3:15PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-21T14:26:00-05:00",
+      "effective": "2026-08-21T14:26:00-05:00",
+      "expires": "2026-08-21T15:15:00-05:00",
+      "areaDesc": "Amite, MS; Pike, MS",
+      "filename": "KLIX-SV-W-0118.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0118.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5d309888a7541592c3042896a890fcfe32278084.001.1",
+      "event": "Severe Thunderstorm Warning",
+      "headline": "Severe Thunderstorm Warning issued August 21 at 2:15PM CDT until August 21 at 3:00PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-21T14:15:00-05:00",
+      "effective": "2026-08-21T14:15:00-05:00",
+      "expires": "2026-08-21T15:00:00-05:00",
+      "areaDesc": "Hancock, MS",
+      "filename": "KLIX-SV-W-0117.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0117.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ff78ba94ca6ed250ede98a69a297db7408daa482.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 20 at 9:02PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-20T21:02:00-05:00",
-      "effective": "2026-08-20T21:02:00-05:00",
-      "expires": "2026-08-20T21:30:00-05:00",
-      "areaDesc": "Washington; Walthall",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-cfee9a8d95bf1347934ba246a735dd57e6ac7337-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-cfee9a8d95bf1347934ba246a735dd57e6ac7337-001-1.png",
+      "headline": "Special Weather Statement issued August 21 at 2:01PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-21T14:01:00-05:00",
+      "effective": "2026-08-21T14:01:00-05:00",
+      "expires": "2026-08-21T14:45:00-05:00",
+      "areaDesc": "Amite; Pike",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-ff78ba94ca6ed250ede98a69a297db7408daa482-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-ff78ba94ca6ed250ede98a69a297db7408daa482-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
