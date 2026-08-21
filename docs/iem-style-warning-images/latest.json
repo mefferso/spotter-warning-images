@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-21T01:51:14.793402+00:00",
-  "mode": "active",
+  "generated_at": "2026-08-21T02:55:08.002932+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.46d43f648e803b35ea3d6cc56b8b16e7eab79279.002.1",
-      "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 20 at 8:39PM CDT until August 20 at 9:00PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-20T20:39:00-05:00",
-      "effective": "2026-08-20T20:39:00-05:00",
-      "expires": "2026-08-20T21:00:00-05:00",
-      "areaDesc": "Pike, MS",
-      "filename": "KLIX-SV-W-0116.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/KLIX-SV-W-0116.png",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfee9a8d95bf1347934ba246a735dd57e6ac7337.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued August 20 at 9:02PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-20T21:02:00-05:00",
+      "effective": "2026-08-20T21:02:00-05:00",
+      "expires": "2026-08-20T21:30:00-05:00",
+      "areaDesc": "Washington; Walthall",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-cfee9a8d95bf1347934ba246a735dd57e6ac7337-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-cfee9a8d95bf1347934ba246a735dd57e6ac7337-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
