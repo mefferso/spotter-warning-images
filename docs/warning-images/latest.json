@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-21T00:27:12.705603+00:00",
+  "generated_at": "2026-08-21T02:08:04.344226+00:00",
   "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4da12aa7ea66250129ff9b3de95b82790cbf1d7b.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cfee9a8d95bf1347934ba246a735dd57e6ac7337.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 20 at 7:13PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-20T19:13:00-05:00",
-      "effective": "2026-08-20T19:13:00-05:00",
-      "expires": "2026-08-20T20:00:00-05:00",
-      "areaDesc": "Pike; Walthall",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-4da12aa7ea66250129ff9b3de95b82790cbf1d7b-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-4da12aa7ea66250129ff9b3de95b82790cbf1d7b-001-1.png",
+      "headline": "Special Weather Statement issued August 20 at 9:02PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-20T21:02:00-05:00",
+      "effective": "2026-08-20T21:02:00-05:00",
+      "expires": "2026-08-20T21:30:00-05:00",
+      "areaDesc": "Washington; Walthall",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-cfee9a8d95bf1347934ba246a735dd57e6ac7337-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-cfee9a8d95bf1347934ba246a735dd57e6ac7337-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
