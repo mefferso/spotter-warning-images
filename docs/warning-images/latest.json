@@ -1,21 +1,9 @@
 {
-  "generated_at": "2026-08-23T22:12:28.707204+00:00",
-  "mode": "active",
+  "generated_at": "2026-08-23T22:38:35.486449+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.03092ee163f2c12148e2c56b012ef2e6cdb84e9d.001.1",
-      "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 23 at 5:02PM CDT until August 23 at 5:30PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T17:02:00-05:00",
-      "effective": "2026-08-23T17:02:00-05:00",
-      "expires": "2026-08-23T17:30:00-05:00",
-      "areaDesc": "Tangipahoa, LA",
-      "filename": "KLIX-SV-W-0147.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0147.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ffd58f132aac68a60298d43494a0809781e17c3e.001.1",
       "event": "Severe Thunderstorm Warning",
