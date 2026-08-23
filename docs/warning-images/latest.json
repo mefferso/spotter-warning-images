@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-08-23T23:20:04.431028+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-08-23T23:41:03.112611+00:00",
+  "mode": "active",
   "wfo": "LIX",
-  "count": 1,
+  "count": 2,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ffd58f132aac68a60298d43494a0809781e17c3e.001.1",
-      "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 23 at 4:58PM CDT until August 23 at 5:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T16:58:00-05:00",
-      "effective": "2026-08-23T16:58:00-05:00",
-      "expires": "2026-08-23T17:45:00-05:00",
-      "areaDesc": "Jefferson, LA; St. Charles, LA; St. John The Baptist, LA; Tangipahoa, LA",
-      "filename": "KLIX-SV-W-0148.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0148.png",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6a14a581c19eb0359986b47e86bb3cccdb32f39.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued August 23 at 6:29PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-23T18:29:00-05:00",
+      "effective": "2026-08-23T18:29:00-05:00",
+      "expires": "2026-08-23T19:00:00-05:00",
+      "areaDesc": "Upper Plaquemines; Central Plaquemines; Lower Plaquemines; Central Jefferson; Coastal Jefferson",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-f6a14a581c19eb0359986b47e86bb3cccdb32f39-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-f6a14a581c19eb0359986b47e86bb3cccdb32f39-001-1.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ced9149343c9d1b4081b993b6b1d1ae5de4d953.001.1",
+      "event": "Special Weather Statement",
+      "headline": "Special Weather Statement issued August 23 at 6:33PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-23T18:33:00-05:00",
+      "effective": "2026-08-23T18:33:00-05:00",
+      "expires": "2026-08-23T19:00:00-05:00",
+      "areaDesc": "Northern Jackson; Southern Jackson",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-0ced9149343c9d1b4081b993b6b1d1ae5de4d953-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-0ced9149343c9d1b4081b993b6b1d1ae5de4d953-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
