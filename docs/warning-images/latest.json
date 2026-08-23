@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-08-23T20:33:12.209643+00:00",
+  "generated_at": "2026-08-23T20:53:58.268291+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dc726df5adfd46b9aa9275cbac9dbc79e1022755.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fdc81436536674231fe4a69e57866837eadc8461.002.1",
       "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 23 at 3:24PM CDT until August 23 at 4:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T15:24:00-05:00",
-      "effective": "2026-08-23T15:24:00-05:00",
+      "headline": "Severe Thunderstorm Warning issued August 23 at 3:44PM CDT until August 23 at 4:15PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-23T15:44:00-05:00",
+      "effective": "2026-08-23T15:44:00-05:00",
       "expires": "2026-08-23T16:15:00-05:00",
-      "areaDesc": "East Baton Rouge, LA; East Feliciana, LA; St. Helena, LA",
+      "areaDesc": "St. Helena, LA",
       "filename": "KLIX-SV-W-0146.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0146.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ba37f99a8f71296a49ca83e143f7963839e8a67.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 23 at 3:12PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T15:12:00-05:00",
-      "effective": "2026-08-23T15:12:00-05:00",
-      "expires": "2026-08-23T15:45:00-05:00",
-      "areaDesc": "East Feliciana; St. Helena; Washington; East Baton Rouge; Northern Tangipahoa; Northern Livingston; Amite; Pike",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-1ba37f99a8f71296a49ca83e143f7963839e8a67-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-1ba37f99a8f71296a49ca83e143f7963839e8a67-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
