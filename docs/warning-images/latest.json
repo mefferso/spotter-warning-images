@@ -1,9 +1,21 @@
 {
-  "generated_at": "2026-08-23T21:35:53.515659+00:00",
+  "generated_at": "2026-08-23T21:54:03.227870+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 3,
+  "count": 2,
   "warnings": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.537a12ee2a53fd541b2d0628068516d604f38380.001.1",
+      "event": "Severe Thunderstorm Warning",
+      "headline": "Severe Thunderstorm Warning issued August 23 at 4:43PM CDT until August 23 at 5:30PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-23T16:43:00-05:00",
+      "effective": "2026-08-23T16:43:00-05:00",
+      "expires": "2026-08-23T17:30:00-05:00",
+      "areaDesc": "Tangipahoa, LA",
+      "filename": "KLIX-SV-W-0147.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0147.png",
+      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
+    },
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.82e391ea9d713d082d77df6ca10aea1a4a9a3ecf.001.1",
       "event": "Special Weather Statement",
@@ -14,30 +26,6 @@
       "areaDesc": "Central Tangipahoa; Lower Tangipahoa; Northern Livingston; Southern Livingston; Eastern Ascension",
       "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-82e391ea9d713d082d77df6ca10aea1a4a9a3ecf-001-1.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-82e391ea9d713d082d77df6ca10aea1a4a9a3ecf-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.835cd9b795691a42c271ad03f7e178db4b70ee07.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 23 at 4:20PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T16:20:00-05:00",
-      "effective": "2026-08-23T16:20:00-05:00",
-      "expires": "2026-08-23T16:45:00-05:00",
-      "areaDesc": "Central Tangipahoa; Lower Tangipahoa",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-835cd9b795691a42c271ad03f7e178db4b70ee07-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-835cd9b795691a42c271ad03f7e178db4b70ee07-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3102ad709af62bfc1e3ae277a7a466bcc4909ee0.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 23 at 4:08PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T16:08:00-05:00",
-      "effective": "2026-08-23T16:08:00-05:00",
-      "expires": "2026-08-23T16:45:00-05:00",
-      "areaDesc": "St. Helena; Northern Tangipahoa; Central Tangipahoa; Northern Livingston",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-3102ad709af62bfc1e3ae277a7a466bcc4909ee0-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-3102ad709af62bfc1e3ae277a7a466bcc4909ee0-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
