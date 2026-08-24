@@ -1,21 +1,9 @@
 {
-  "generated_at": "2026-08-24T21:05:19.227783+00:00",
+  "generated_at": "2026-08-24T21:39:46.092463+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7945aae29ff921e571a1448089f2d8a6c3dea17a.002.1",
-      "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 24 at 3:53PM CDT until August 24 at 4:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-24T15:53:00-05:00",
-      "effective": "2026-08-24T15:53:00-05:00",
-      "expires": "2026-08-24T16:15:00-05:00",
-      "areaDesc": "Lafourche, LA; Terrebonne, LA",
-      "filename": "KLIX-SV-W-0152.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0152.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0fda52635416d8c46bb024bbe7b988c4eca24a41.001.1",
       "event": "Special Weather Statement",
