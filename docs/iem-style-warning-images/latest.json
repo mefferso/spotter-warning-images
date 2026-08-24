@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-08-24T04:28:59.273989+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-08-24T05:22:06.030319+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a0f838a57cc2f8d9649f801dcd561605de7f0592.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91387b45bf394ac1d126af90f735ade5d77f7f60.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 23 at 7:46PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T19:46:00-05:00",
-      "effective": "2026-08-23T19:46:00-05:00",
-      "expires": "2026-08-23T20:30:00-05:00",
-      "areaDesc": "Northern Jackson; Southern Jackson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-a0f838a57cc2f8d9649f801dcd561605de7f0592-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-a0f838a57cc2f8d9649f801dcd561605de7f0592-001-1.png",
+      "headline": "Special Weather Statement issued August 24 at 12:01AM CDT by NWS New Orleans LA",
+      "sent": "2026-08-24T00:01:00-05:00",
+      "effective": "2026-08-24T00:01:00-05:00",
+      "expires": "2026-08-24T00:45:00-05:00",
+      "areaDesc": "St. Helena; Northern Tangipahoa; Amite",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-91387b45bf394ac1d126af90f735ade5d77f7f60-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-91387b45bf394ac1d126af90f735ade5d77f7f60-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
