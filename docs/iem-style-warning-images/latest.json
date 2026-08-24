@@ -1,43 +1,19 @@
 {
-  "generated_at": "2026-08-23T23:53:20.976941+00:00",
+  "generated_at": "2026-08-24T01:05:34.655265+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 3,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.624bbd41d46fd2242864961a8b14726d0376b82f.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a0f838a57cc2f8d9649f801dcd561605de7f0592.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 23 at 6:48PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T18:48:00-05:00",
-      "effective": "2026-08-23T18:48:00-05:00",
-      "expires": "2026-08-23T19:15:00-05:00",
-      "areaDesc": "Central Jefferson; Coastal Jefferson; Upper Lafourche; Lower Lafourche",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-624bbd41d46fd2242864961a8b14726d0376b82f-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-624bbd41d46fd2242864961a8b14726d0376b82f-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6a14a581c19eb0359986b47e86bb3cccdb32f39.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 23 at 6:29PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T18:29:00-05:00",
-      "effective": "2026-08-23T18:29:00-05:00",
-      "expires": "2026-08-23T19:00:00-05:00",
-      "areaDesc": "Upper Plaquemines; Central Plaquemines; Lower Plaquemines; Central Jefferson; Coastal Jefferson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-f6a14a581c19eb0359986b47e86bb3cccdb32f39-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-f6a14a581c19eb0359986b47e86bb3cccdb32f39-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0ced9149343c9d1b4081b993b6b1d1ae5de4d953.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 23 at 6:33PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-23T18:33:00-05:00",
-      "effective": "2026-08-23T18:33:00-05:00",
-      "expires": "2026-08-23T19:00:00-05:00",
+      "headline": "Special Weather Statement issued August 23 at 7:46PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-23T19:46:00-05:00",
+      "effective": "2026-08-23T19:46:00-05:00",
+      "expires": "2026-08-23T20:30:00-05:00",
       "areaDesc": "Northern Jackson; Southern Jackson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-0ced9149343c9d1b4081b993b6b1d1ae5de4d953-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-0ced9149343c9d1b4081b993b6b1d1ae5de4d953-001-1.png",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-a0f838a57cc2f8d9649f801dcd561605de7f0592-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-a0f838a57cc2f8d9649f801dcd561605de7f0592-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
