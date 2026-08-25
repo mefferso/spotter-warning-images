@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-25T23:13:32.223421+00:00",
+  "generated_at": "2026-08-25T23:42:09.794362+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 3,
+  "count": 2,
   "warnings": [
     {
       "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b43aa09b2017a8af608f7534920a147267198aa7.001.1",
@@ -26,18 +26,6 @@
       "areaDesc": "East Baton Rouge; Assumption; St. James; St. John The Baptist; Central Tangipahoa; Lower Tangipahoa; Northern Livingston; Southern Livingston; Western Ascension; Eastern Ascension",
       "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c130f8683d6325fcdda8ba57ff78da612304b97a-001-1.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c130f8683d6325fcdda8ba57ff78da612304b97a-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f391a6b28b7324b996e882d591991d7ae9925af.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 25 at 5:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-25T17:45:00-05:00",
-      "effective": "2026-08-25T17:45:00-05:00",
-      "expires": "2026-08-25T18:30:00-05:00",
-      "areaDesc": "Upper Lafourche; Lower Lafourche; Upper Terrebonne; Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-1f391a6b28b7324b996e882d591991d7ae9925af-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-1f391a6b28b7324b996e882d591991d7ae9925af-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
