@@ -1,43 +1,19 @@
 {
-  "generated_at": "2026-08-25T23:30:17.075513+00:00",
+  "generated_at": "2026-08-25T23:51:10.311105+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 3,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b43aa09b2017a8af608f7534920a147267198aa7.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.66df78e1dd983ef7198f5acda03f379aabf69098.001.1",
       "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 25 at 6:04PM CDT until August 25 at 6:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-25T18:04:00-05:00",
-      "effective": "2026-08-25T18:04:00-05:00",
-      "expires": "2026-08-25T18:45:00-05:00",
-      "areaDesc": "Lafourche, LA; Terrebonne, LA",
-      "filename": "KLIX-SV-W-0155.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0155.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c130f8683d6325fcdda8ba57ff78da612304b97a.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 25 at 5:47PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-25T17:47:00-05:00",
-      "effective": "2026-08-25T17:47:00-05:00",
-      "expires": "2026-08-25T18:45:00-05:00",
-      "areaDesc": "East Baton Rouge; Assumption; St. James; St. John The Baptist; Central Tangipahoa; Lower Tangipahoa; Northern Livingston; Southern Livingston; Western Ascension; Eastern Ascension",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-c130f8683d6325fcdda8ba57ff78da612304b97a-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-c130f8683d6325fcdda8ba57ff78da612304b97a-001-1.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f391a6b28b7324b996e882d591991d7ae9925af.001.1",
-      "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued August 25 at 5:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-25T17:45:00-05:00",
-      "effective": "2026-08-25T17:45:00-05:00",
-      "expires": "2026-08-25T18:30:00-05:00",
-      "areaDesc": "Upper Lafourche; Lower Lafourche; Upper Terrebonne; Lower Terrebonne",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-1f391a6b28b7324b996e882d591991d7ae9925af-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-1f391a6b28b7324b996e882d591991d7ae9925af-001-1.png",
+      "headline": "Severe Thunderstorm Warning issued August 25 at 6:41PM CDT until August 25 at 7:15PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-25T18:41:00-05:00",
+      "effective": "2026-08-25T18:41:00-05:00",
+      "expires": "2026-08-25T19:15:00-05:00",
+      "areaDesc": "Assumption, LA",
+      "filename": "KLIX-SV-W-0156.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-SV-W-0156.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
