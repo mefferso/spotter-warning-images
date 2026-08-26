@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-26T00:01:48.138802+00:00",
-  "mode": "active",
+  "generated_at": "2026-08-26T01:54:54.092305+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.66df78e1dd983ef7198f5acda03f379aabf69098.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.45eccb42967fcd321ea202c7d2f4693b01d8f91e.001.1",
       "event": "Severe Thunderstorm Warning",
-      "headline": "Severe Thunderstorm Warning issued August 25 at 6:41PM CDT until August 25 at 7:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-08-25T18:41:00-05:00",
-      "effective": "2026-08-25T18:41:00-05:00",
-      "expires": "2026-08-25T19:15:00-05:00",
+      "headline": "Severe Thunderstorm Warning issued August 25 at 7:14PM CDT until August 25 at 7:15PM CDT by NWS New Orleans LA",
+      "sent": "2026-08-25T19:14:00-05:00",
+      "effective": "2026-08-25T19:14:00-05:00",
+      "expires": "2026-08-25T19:24:00-05:00",
       "areaDesc": "Assumption, LA",
       "filename": "KLIX-SV-W-0156.png",
       "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/KLIX-SV-W-0156.png",
