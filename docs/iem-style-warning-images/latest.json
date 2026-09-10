@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-09-10T18:31:51.534578+00:00",
+  "generated_at": "2026-09-10T21:09:56.445909+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.632b40b37c947980b1f8a33f5326df16495bdc95.002.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued September 10 at 1:26PM CDT until September 10 at 3:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-09-10T13:26:00-05:00",
-      "effective": "2026-09-10T13:26:00-05:00",
-      "expires": "2026-09-10T15:15:00-05:00",
-      "areaDesc": "Livingston, LA; Tangipahoa, LA",
-      "filename": "KLIX-FF-W-0118.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/KLIX-FF-W-0118.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a311697646202dd230df85cbdf1a61b034105ee5.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8d2f00a622ba8b953941eb47a0949cfc1ee31939.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued September 10 at 1:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-09-10T13:15:00-05:00",
-      "effective": "2026-09-10T13:15:00-05:00",
-      "expires": "2026-09-10T14:00:00-05:00",
-      "areaDesc": "Upper St. Bernard; Lower St. Bernard; Central Plaquemines; Lower Plaquemines; Central Jefferson; Coastal Jefferson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-a311697646202dd230df85cbdf1a61b034105ee5-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-a311697646202dd230df85cbdf1a61b034105ee5-001-1.png",
+      "headline": "Special Weather Statement issued September 10 at 3:30PM CDT by NWS New Orleans LA",
+      "sent": "2026-09-10T15:30:00-05:00",
+      "effective": "2026-09-10T15:30:00-05:00",
+      "expires": "2026-09-10T16:15:00-05:00",
+      "areaDesc": "Pointe Coupee; West Feliciana; Wilkinson",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-8d2f00a622ba8b953941eb47a0949cfc1ee31939-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-8d2f00a622ba8b953941eb47a0949cfc1ee31939-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/iem-style-warning-images/latest.png"
     }
   ]
