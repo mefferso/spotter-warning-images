@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-09-10T17:13:27.712008+00:00",
+  "generated_at": "2026-09-10T19:43:06.627037+00:00",
   "mode": "active",
   "wfo": "LIX",
-  "count": 2,
+  "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.73d774e80e68eb04fba8615da4c5724e4488fce0.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1ddf8178a0facb99077b15ba0036ed58e65b7314.001.1",
       "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued September 10 at 12:08PM CDT until September 10 at 3:15PM CDT by NWS New Orleans LA",
-      "sent": "2026-09-10T12:08:00-05:00",
-      "effective": "2026-09-10T12:08:00-05:00",
-      "expires": "2026-09-10T15:15:00-05:00",
-      "areaDesc": "Livingston, LA; St. Helena, LA; Tangipahoa, LA",
-      "filename": "KLIX-FF-W-0118.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0118.png",
-      "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
-    },
-    {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.93d5c4f2a6a4c0d0ec67cbfa5a9fc2d465600044.001.1",
-      "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued September 10 at 10:46AM CDT until September 10 at 12:45PM CDT by NWS New Orleans LA",
-      "sent": "2026-09-10T10:46:00-05:00",
-      "effective": "2026-09-10T10:46:00-05:00",
-      "expires": "2026-09-10T12:45:00-05:00",
-      "areaDesc": "Hancock, MS; Harrison, MS",
-      "filename": "KLIX-FF-W-0117.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0117.png",
+      "headline": "Flash Flood Warning issued September 10 at 1:55PM CDT until September 10 at 5:00PM CDT by NWS New Orleans LA",
+      "sent": "2026-09-10T13:55:00-05:00",
+      "effective": "2026-09-10T13:55:00-05:00",
+      "expires": "2026-09-10T17:00:00-05:00",
+      "areaDesc": "Jefferson, LA; Orleans, LA; Plaquemines, LA",
+      "filename": "KLIX-FF-W-0119.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/KLIX-FF-W-0119.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
