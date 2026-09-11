@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-09-11T15:14:14.207878+00:00",
-  "mode": "latest_fallback",
+  "generated_at": "2026-09-11T18:35:43.123239+00:00",
+  "mode": "active",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8d2f00a622ba8b953941eb47a0949cfc1ee31939.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7de779df650a960dc43924285a5e5d4aca3064e2.001.1",
       "event": "Special Weather Statement",
-      "headline": "Special Weather Statement issued September 10 at 3:30PM CDT by NWS New Orleans LA",
-      "sent": "2026-09-10T15:30:00-05:00",
-      "effective": "2026-09-10T15:30:00-05:00",
-      "expires": "2026-09-10T16:15:00-05:00",
-      "areaDesc": "Pointe Coupee; West Feliciana; Wilkinson",
-      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-8d2f00a622ba8b953941eb47a0949cfc1ee31939-001-1.png",
-      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-8d2f00a622ba8b953941eb47a0949cfc1ee31939-001-1.png",
+      "headline": "Special Weather Statement issued September 11 at 1:31PM CDT by NWS New Orleans LA",
+      "sent": "2026-09-11T13:31:00-05:00",
+      "effective": "2026-09-11T13:31:00-05:00",
+      "expires": "2026-09-11T14:15:00-05:00",
+      "areaDesc": "East Feliciana; St. Helena; East Baton Rouge; Northern Livingston",
+      "filename": "gov-alerts-urn-oid-2-49-0-1-840-0-7de779df650a960dc43924285a5e5d4aca3064e2-001-1.png",
+      "raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/gov-alerts-urn-oid-2-49-0-1-840-0-7de779df650a960dc43924285a5e5d4aca3064e2-001-1.png",
       "latest_raw_url": "https://raw.githubusercontent.com/mefferso/spotter-warning-images/main/docs/warning-images/latest.png"
     }
   ]
