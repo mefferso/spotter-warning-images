@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-04T00:08:12.795267+00:00",
-  "mode": "active",
+  "generated_at": "2026-10-04T05:51:15.967373+00:00",
+  "mode": "latest_fallback",
   "wfo": "LIX",
   "count": 1,
   "warnings": [
     {
-      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.33796e6fa0ca2c598dfe09a5d364985edce1ae7c.001.1",
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.994718b531239651f866026746343fcc28babfcf.001.1",
       "event": "Flash Flood Warning",
-      "headline": "Flash Flood Warning issued October 3 at 6:20PM CDT until October 3 at 7:30PM CDT by NWS New Orleans LA",
-      "sent": "2026-10-03T18:20:00-05:00",
-      "effective": "2026-10-03T18:20:00-05:00",
+      "headline": "Flash Flood Warning issued October 3 at 4:18PM CDT until October 3 at 7:30PM CDT by NWS New Orleans LA",
+      "sent": "2026-10-03T16:18:00-05:00",
+      "effective": "2026-10-03T16:18:00-05:00",
       "expires": "2026-10-03T19:30:00-05:00",
       "areaDesc": "Jefferson, LA; Orleans, LA; Plaquemines, LA; St. Bernard, LA; St. Charles, LA",
       "filename": "KLIX-FF-W-0120.png",
